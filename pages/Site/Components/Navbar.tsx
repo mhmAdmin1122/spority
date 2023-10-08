@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
       <div className='mobile-menu-part dropdown-trigger grid relative'>
         <BiSolidFoodMenu onClick={mobMenuClick} />
-        {mobMenu && <div className='absolute bg-gray-200 grid px-4 py-2 border-2 border-gray-300 right-[8px] top-[48px] text-[20px] font-bold rounded-md'>
+        {mobMenu && <div className='absolute bg-gray-200 grid px-4 py-2 border-2 border-gray-300 right-[8px] top-[48px] text-[20px] font-bold rounded-md text-[#000]'>
           <Link href={"/"}>Home</Link>
           <Link href={"/"}>About</Link>
           <Link href={"/"}>Services</Link>
