@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 /* Navbar */
-.navbar{
-    @apply flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
-    box-shadow: 8px 8px 12px #cfcece, inset 8px 8px 14px #e0dede;
+.navbar {
+  @apply flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
+  box-shadow: 8px 8px 12px #cfcece, inset 8px 8px 14px #e0dede;
 }
-.Tabs_site{
+.Tabs_site {
   @apply cursor-pointer flex flex-wrap justify-center items-center gap-4 text-lg font-bold;
 }
 /* dropdown list */
@@ -24,15 +24,19 @@
 .dark {
   @apply bg-[#5e5c5c] text-[#fff] flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
 }
-.sign_in_up_btn button{
-    @apply text-lg font-bold text-[#fff];
+.sign_in_up_btn button {
+  @apply text-lg font-bold text-[#fff];
 }
-.sign_in_up_btn .dark_Light{
-    @apply rounded-full p-4 bg-blue-700;
+.sign_in_up_btn .dark_Light {
+  @apply rounded-full p-4 bg-blue-700;
 }
-.sign_in_up_btn .reg_log_btn{
-    @apply rounded-md px-4 py-2 bg-green-700;
+.sign_in_up_btn .reg_log_btn {
+  @apply rounded-md px-4 py-2 bg-green-700;
 }
+.mobile-menu-part {
+  @apply hidden;
+}
+
 /* Navbar */
 
 /* main Body */
@@ -40,3 +44,45 @@
 
 /* Footer */
 /* Footer */
+
+/* responsive */
+/* Desktop View */
+@media (max-width: 900px) and (min-width: 701px) {
+  .mobile-menu-part {
+    @apply hidden;
+  }
+}
+/* tab, laptop View */
+@media (max-width: 900px) and (min-width: 701px) {
+  .mobile-menu-part {
+    @apply hidden;
+  }
+}
+/* ipad, Hub-mobile View */
+@media (max-width: 700px) and (min-width: 450px) {
+  .desktop-menu-part {
+    @apply hidden;
+  }
+  .mobile-menu-part {
+    @apply block text-4xl;
+  }
+}
+/* Mobile Devices */
+@media (max-width: 449px) and (min-width: 360px) {
+  .desktop-menu-part,
+  .tab-lab-menu-part {
+    @apply hidden;
+  }
+  .mobile-menu-part {
+    @apply block text-4xl;
+  }
+}
+@media (max-width: 359px) and (min-width: 200px) {
+  .desktop-menu-part,
+  .tab-lab-menu-part {
+    @apply hidden;
+  }
+  .mobile-menu-part {
+    @apply block text-4xl;
+  }
+}
