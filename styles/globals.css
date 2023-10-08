@@ -6,7 +6,7 @@
 .navbar {
   @apply flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
   box-shadow: 8px 8px 12px #cfcece, inset 8px 8px 14px #e0dede;
-}
+} 
 .Tabs_site {
   @apply cursor-pointer flex flex-wrap justify-center items-center gap-4 text-lg font-bold;
 }
@@ -40,6 +40,26 @@
 /* Navbar */
 
 /* main Body */
+/* slider-hero */
+.slick-next {
+  @apply !bg-[#c00] !right-[8px] !py-2 !w-[50px] !h-[50px] !px-2 !text-[#000] rounded-full;
+}
+.slick-prev {
+  @apply !bg-[#c00] !left-[8px] !py-2 !w-[50px] !h-[50px] !px-2 !text-[#000] rounded-full !z-[8888888];
+}
+.slick-list .slick-track{
+  height: 400px !important;
+  background: red;
+}
+.slick-next::before {
+  content: ">" !important;
+}
+.slick-prev::before {
+  content: "<" !important;
+}
+.hero_Content_bOX{
+  @apply px-20 bg-[url("/img/SScBack.png")] h-[400px] bg-no-repeat bg-cover;
+}
 /* main Body */
 
 /* Footer */
