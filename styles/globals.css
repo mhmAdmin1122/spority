@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Navbar */
+.navbar{
+    @apply flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
+    box-shadow: 8px 8px 12px #cfcece, inset 8px 8px 14px #e0dede;
+}
+.Tabs_site{
+  @apply cursor-pointer flex flex-wrap justify-center items-center gap-4 text-lg font-bold;
+}
+/* dropdown list */
+.dropdown {
+  @apply hidden absolute bg-[fff] shadow-md shadow-gray-400 border-2 border-gray-300 rounded-md z-[1] px-6 py-4 bg-[#fff] text-[#000] transition-all duration-1000 ease-in-out;
+}
+.dropdown:hover {
+  @apply block;
+}
+/* dropdown triger */
+.dropdown-trigger:hover .dropdown {
+  @apply block;
+}
+.dark {
+  @apply bg-[#5e5c5c] text-[#fff] flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
+}
+.sign_in_up_btn button{
+    @apply text-lg font-bold text-[#fff];
+}
+.sign_in_up_btn .dark_Light{
+    @apply rounded-full p-4 bg-blue-700;
+}
+.sign_in_up_btn .reg_log_btn{
+    @apply rounded-md px-4 py-2 bg-green-700;
+}
+/* Navbar */
+
+/* main Body */
+/* main Body */
+
+/* Footer */
+/* Footer */

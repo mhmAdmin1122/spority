@@ -4,7 +4,7 @@ import Footer from './Footer'
 
 const Layout = ({children}:any) => {
   return (
-    <div className='grid h-screen w-full'>
+    <div>
       <Navbar />
       {children}
       <Footer />
