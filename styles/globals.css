@@ -5,7 +5,6 @@
 /* Navbar */
 .navbar {
   @apply flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
-  box-shadow: 8px 8px 12px #cfcece, inset 8px 8px 14px #e0dede;
 } 
 .Tabs_site {
   @apply cursor-pointer flex flex-wrap justify-center items-center gap-4 text-lg font-bold;
@@ -22,7 +21,7 @@
   @apply block;
 }
 .dark {
-  @apply bg-[#5e5c5c] text-[#fff] flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
+  @apply bg-[#000000] text-[#fff] flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-900 h-[90px];
 }
 .sign_in_up_btn button {
   @apply text-lg font-bold text-[#fff];
@@ -58,7 +57,7 @@
   content: "<" !important;
 }
 .hero_Content_bOX{
-  @apply px-20 bg-[url("/img/SScBack.png")] h-[400px] bg-no-repeat bg-cover;
+  @apply px-20 bg-[url("/img/wtchlivebanner1.png")] h-[400px] bg-center bg-fixed;
 }
 /* main Body */
 
