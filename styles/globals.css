@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 /* Navbar */
+
 .navbar {
-  @apply flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-300 h-[90px];
-} 
+  @apply bg-[#fceeee] flex flex-wrap justify-between items-center px-10 py-2;
+}
 .Tabs_site {
-  @apply cursor-pointer flex flex-wrap justify-center items-center gap-4 text-lg font-bold;
+  @apply cursor-pointer flex flex-wrap justify-center items-center gap-4 text-base font-bold;
+}
+.Tabs_site li:hover {
+  @apply text-[#c24949] transition-all duration-700;
 }
 /* dropdown list */
 .dropdown {
@@ -21,13 +25,13 @@
   @apply block;
 }
 .dark {
-  @apply bg-[#000000] text-[#fff] flex flex-wrap justify-between items-center px-10 border-b-2 border-gray-900 h-[90px];
+  @apply bg-[#f686f8] text-[#fff] flex flex-wrap justify-between items-center px-10 py-2;
 }
 .sign_in_up_btn button {
   @apply text-lg font-bold text-[#fff];
 }
 .sign_in_up_btn .dark_Light {
-  @apply rounded-full p-4 bg-blue-700;
+  @apply rounded-full p-4 bg-[#db2dde];
 }
 .sign_in_up_btn .reg_log_btn {
   @apply rounded-md px-4 py-2 bg-green-700;
@@ -39,25 +43,45 @@
 /* Navbar */
 
 /* main Body */
-/* slider-hero */
-.slick-next {
-  @apply !bg-[#c00] !right-[8px] !py-2 !w-[50px] !h-[50px] !px-2 !text-[#000] rounded-full;
+.banner {
+  @apply w-[100%] h-auto px-12 py-12 flex justify-between items-center gap-4;
 }
-.slick-prev {
-  @apply !bg-[#c00] !left-[8px] !py-2 !w-[50px] !h-[50px] !px-2 !text-[#000] rounded-full !z-[8888888];
+.left_Side {
+  @apply w-[45%] grid justify-center items-center gap-6;
 }
-.slick-list .slick-track{
-  height: 400px !important;
-  background: red;
+.left_Side h1 {
+  @apply text-5xl font-bold cursor-context-menu text-[#5b5f7c];
 }
-.slick-next::before {
-  content: ">" !important;
+.left_Side h1 b,
+.LiveChannel_topHeading {
+  @apply text-[#db2dde] mt-[10px];
 }
-.slick-prev::before {
-  content: "<" !important;
+.right_Side {
+  @apply w-[55%];
 }
-.hero_Content_bOX{
-  @apply px-20 bg-[url("/img/wtchlivebanner1.png")] h-[400px] bg-center bg-fixed;
+.innot-text {
+  @apply text-gray-400 flex items-center gap-2 text-base;
+}
+.left_Side a {
+  @apply bg-[#db2dde] px-4 py-2 rounded-md w-fit text-base text-[#fff] font-bold;
+}
+.LiveChannel_topHeading {
+  @apply text-center text-[#5b5f7c] mb-4 text-5xl font-bold cursor-context-menu gap-2 flex items-center justify-center w-full;
+}
+.LiveChannel_topHeading b svg {
+  @apply text-[#db2dde];
+}
+.LiveChannel {
+  @apply px-12 py-8;
+}
+.LiveChannel_Cards {
+  @apply flex flex-wrap items-center justify-center gap-4;
+}
+.lc_cradBox {
+  @apply relative w-[320px] rounded-md overflow-hidden;
+}
+.lc_badge {
+  @apply absolute top-0 right-0 bg-[#5b5f7c] px-4 py-2 rounded-bl-lg cursor-pointer text-[#fff];
 }
 /* main Body */
 

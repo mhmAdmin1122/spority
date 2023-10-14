@@ -7,7 +7,7 @@ const Layout = ({children}:any) => {
     <div>
       <Navbar />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

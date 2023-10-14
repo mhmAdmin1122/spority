@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "./Site/Components/Layout";
-import HeroSlick from "./Site/Components/HeroSlick";
+import Banner from "./Site/Components/Banner";
+import LiveChannel from "./Site/Components/LiveChannel";
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
         <meta name="keywords" content="Live, Watch Sport, WorldCup Live, Watch Live Cricket, Football, Tenis" />
       </Head>
       <Layout>
-        <HeroSlick />
-        Home Page ....
+        <Banner />
+        <LiveChannel />
       </Layout>
     </>
   )

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className={dark ? `dark transition-all duration-1000` : `navbar transition-all duration-1000`}>
-      <div className="logoBox w-[190px] h-[80px]">
+      <div className="logoBox w-[50px] h-[50px]">
         <Link href={"/"}><ImageBox sourceImg={"/img/Logo.png"} picName="logo" /></Link>
       </div>
       <ul className='Tabs_site desktop-menu-part'>
