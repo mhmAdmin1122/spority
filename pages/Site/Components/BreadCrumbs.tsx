@@ -10,7 +10,7 @@ const BreadCrumbs = ({ crumbTitle, crumbUrl }: any) => {
                 <b><CgMediaLive /></b>
                 <i>{crumbTitle}</i>
             </div>
-            <Link href={crumbUrl}>
+            <Link href={`${crumbUrl}`}>
                 <b>See All</b>
                 <i><MdRemoveRedEye /></i>
             </Link>
