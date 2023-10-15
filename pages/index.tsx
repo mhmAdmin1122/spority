@@ -18,6 +18,7 @@ export default function Home() {
         <LiveChannel />
         <NewsChannel />
         <EventsBanner />
+        <iframe src="//stream.crichd.vip/update/ptv.php" width="60%" height="400px" scrolling="no" allowFullScreen={true} className="my-6" allow="encrypted-media"></iframe>
       </Layout>
     </>
   )

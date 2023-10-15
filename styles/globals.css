@@ -94,7 +94,7 @@
 }
 .lc_cradBox,
 .nc_cradBox {
-  @apply relative w-[320px] rounded-md overflow-hidden;
+  @apply relative w-[260px] rounded-md overflow-hidden;
 }
 .lc_badge,
 .nc_badge {
@@ -129,11 +129,11 @@
   content: ">" !important;
 }
 .slick-next {
-  top: 37% !important;
+  top: 45% !important;
   right: 40px !important;
 }
 .slick-prev {
-  top: 37% !important;
+  top: 45% !important;
   left: 0px !important;
   z-index: 999999 !important;
 }

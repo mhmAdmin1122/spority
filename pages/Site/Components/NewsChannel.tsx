@@ -35,6 +35,15 @@ const NewsChannel = () => {
                         <b>Sky SPORT</b>
                     </div>
                 </div>
+                
+                <div className="nc_cradBox">
+                    <div className="cardboxImage w-full">
+                        <ImageBox sourceImg={skyPic} picName="live-channels" />
+                    </div>
+                    <div className="nc_badge">
+                        <b>Sky SPORT</b>
+                    </div>
+                </div>
 
             </div>
         </div>

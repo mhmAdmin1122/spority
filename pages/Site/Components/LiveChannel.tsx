@@ -32,6 +32,14 @@ const LiveChannel = () => {
                         <b>Sky SPORT</b>
                     </div>
                 </div>
+                <div className="lc_cradBox">
+                    <div className="cardboxImage w-full">
+                        <ImageBox sourceImg={skyPic} picName="live-channels" />
+                    </div>
+                    <div className="lc_badge">
+                        <b>Sky SPORT</b>
+                    </div>
+                </div>
             </div>
         </div>
     )
