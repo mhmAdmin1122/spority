@@ -83,20 +83,64 @@
 }
 /* breadCrumbs */
 
-/* Live Channels */
-.LiveChannel {
+/* Live Channels & News Channels */
+.LiveChannel,
+.NewsChannels {
   @apply px-12 py-8;
 }
-.LiveChannel_Cards {
+.LiveChannel_Cards,
+.NewsChannel_Cards {
   @apply flex flex-wrap items-center justify-center gap-4;
 }
-.lc_cradBox {
+.lc_cradBox,
+.nc_cradBox {
   @apply relative w-[320px] rounded-md overflow-hidden;
 }
-.lc_badge {
+.lc_badge,
+.nc_badge {
   @apply absolute top-0 right-0 bg-[#5b5f7c] px-4 py-2 rounded-bl-lg cursor-pointer text-[#fff];
 }
 /* Live Channels */
+
+/* Events */
+.E_Name {
+  @apply text-6xl font-bold my-3 text-[#333233] flex justify-center items-center gap-2;
+}
+/* slider */
+.slick-next:before,
+.slick-prev:before {
+  text-align: center;
+  background: #e023d7 !important;
+  padding: 0px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  right: 0px !important;
+}
+.slick-prev:before {
+  content: "<" !important;
+}
+.slick-next:before {
+  content: ">" !important;
+}
+.slick-next {
+  top: 37% !important;
+  right: 40px !important;
+}
+.slick-prev {
+  top: 37% !important;
+  left: 0px !important;
+  z-index: 999999 !important;
+}
+.slick-slide div {
+  margin: 4px;
+}
+/* Events */
 
 /* main Body */
 

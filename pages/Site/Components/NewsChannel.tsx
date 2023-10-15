@@ -1,40 +1,44 @@
 import React from 'react'
-import ImageBox from './ImageBox'
-import skyPic from '@/public/img/sky.png'
 import BreadCrumbs from './BreadCrumbs'
+import skyPic from '@/public/img/sky.png'
+import ImageBox from './ImageBox'
 
-const LiveChannel = () => {
+const NewsChannel = () => {
     return (
-        <div className='LiveChannel'>
-           <BreadCrumbs crumbTitle="Live Channels" crumbUrl='/' />
-            <div className="LiveChannel_Cards">
-                <div className="lc_cradBox">
+        <div className='NewsChannels'>
+            <BreadCrumbs crumbTitle="News Channels" crumbUrl='/' />
+            <div className="NewsChannel_Cards">
+
+                <div className="nc_cradBox">
                     <div className="cardboxImage w-full">
                         <ImageBox sourceImg={skyPic} picName="live-channels" />
                     </div>
-                    <div className="lc_badge">
+                    <div className="nc_badge">
                         <b>Sky SPORT</b>
                     </div>
                 </div>
-                <div className="lc_cradBox">
+
+                <div className="nc_cradBox">
                     <div className="cardboxImage w-full">
                         <ImageBox sourceImg={skyPic} picName="live-channels" />
                     </div>
-                    <div className="lc_badge">
+                    <div className="nc_badge">
                         <b>Sky SPORT</b>
                     </div>
                 </div>
-                <div className="lc_cradBox">
+
+                <div className="nc_cradBox">
                     <div className="cardboxImage w-full">
                         <ImageBox sourceImg={skyPic} picName="live-channels" />
                     </div>
-                    <div className="lc_badge">
+                    <div className="nc_badge">
                         <b>Sky SPORT</b>
                     </div>
                 </div>
+
             </div>
         </div>
     )
 }
 
-export default LiveChannel
+export default NewsChannel
