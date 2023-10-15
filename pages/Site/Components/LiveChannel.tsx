@@ -1,15 +1,13 @@
 import React from 'react'
-import { CgMediaLive } from 'react-icons/cg'
 import ImageBox from './ImageBox'
 import skyPic from '@/public/img/sky.png'
+import Link from 'next/link'
+import BreadCrumbs from './BreadCrumbs'
 
 const LiveChannel = () => {
     return (
         <div className='LiveChannel'>
-            <div className="LiveChannel_topHeading">
-                <b><CgMediaLive /></b>
-                <i>Live Channels</i>
-            </div>
+           <BreadCrumbs crumbTitle="Live Channels" crumbUrl='/' />
             <div className="LiveChannel_Cards">
                 <div className="lc_cradBox">
                     <div className="cardboxImage w-full">

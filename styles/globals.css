@@ -5,7 +5,7 @@
 /* Navbar */
 
 .navbar {
-  @apply bg-[#fceeee] flex flex-wrap justify-between items-center px-10 py-2;
+  @apply bg-[#fee6fb] flex flex-wrap justify-between items-center px-10 py-2;
 }
 .Tabs_site {
   @apply cursor-pointer flex flex-wrap justify-center items-center gap-4 text-base font-bold;
@@ -43,6 +43,8 @@
 /* Navbar */
 
 /* main Body */
+
+/* hero-banner */
 .banner {
   @apply w-[100%] h-auto px-12 py-12 flex justify-between items-center gap-4;
 }
@@ -52,8 +54,7 @@
 .left_Side h1 {
   @apply text-5xl font-bold cursor-context-menu text-[#5b5f7c];
 }
-.left_Side h1 b,
-.LiveChannel_topHeading {
+.left_Side h1 b {
   @apply text-[#db2dde] mt-[10px];
 }
 .right_Side {
@@ -65,12 +66,24 @@
 .left_Side a {
   @apply bg-[#db2dde] px-4 py-2 rounded-md w-fit text-base text-[#fff] font-bold;
 }
-.LiveChannel_topHeading {
-  @apply text-center text-[#5b5f7c] mb-4 text-5xl font-bold cursor-context-menu gap-2 flex items-center justify-center w-full;
+/* hero-banner */
+
+/* breadCrumbs */
+.breadCrumbs {
+  @apply flex flex-wrap items-center justify-between bg-[#5b5f7c] text-[#fff] rounded-md overflow-hidden my-6;
 }
-.LiveChannel_topHeading b svg {
-  @apply text-[#db2dde];
+.breadCrumbs div {
+  @apply flex flex-wrap justify-center items-center gap-2 bg-[#db2dde] cursor-context-menu text-[#fff] px-4 py-2 text-base font-bold;
 }
+.breadCrumbs a {
+  @apply px-3 flex flex-wrap justify-center text-base items-center gap-2 transition-all duration-500;
+}
+.breadCrumbs a:hover {
+  @apply text-[#7ddbaf];
+}
+/* breadCrumbs */
+
+/* Live Channels */
 .LiveChannel {
   @apply px-12 py-8;
 }
@@ -83,6 +96,8 @@
 .lc_badge {
   @apply absolute top-0 right-0 bg-[#5b5f7c] px-4 py-2 rounded-bl-lg cursor-pointer text-[#fff];
 }
+/* Live Channels */
+
 /* main Body */
 
 /* Footer */
@@ -91,27 +106,34 @@
 /* responsive */
 /* Desktop View */
 @media (max-width: 900px) and (min-width: 701px) {
+  /* Navbar */
   .mobile-menu-part {
     @apply hidden;
   }
+  /* Navbar */
 }
 /* tab, laptop View */
 @media (max-width: 900px) and (min-width: 701px) {
+  /* Navbar */
   .mobile-menu-part {
     @apply hidden;
   }
+  /* Navbar */
 }
 /* ipad, Hub-mobile View */
 @media (max-width: 700px) and (min-width: 450px) {
+  /* Navbar */
   .desktop-menu-part {
     @apply hidden;
   }
   .mobile-menu-part {
     @apply block text-4xl;
   }
+  /* Navbar */
 }
 /* Mobile Devices */
 @media (max-width: 449px) and (min-width: 360px) {
+  /* Navbar */
   .desktop-menu-part,
   .tab-lab-menu-part {
     @apply hidden;
@@ -119,8 +141,10 @@
   .mobile-menu-part {
     @apply block text-4xl;
   }
+  /* Navbar */
 }
 @media (max-width: 359px) and (min-width: 200px) {
+  /* Navbar */
   .desktop-menu-part,
   .tab-lab-menu-part {
     @apply hidden;
@@ -128,4 +152,5 @@
   .mobile-menu-part {
     @apply block text-4xl;
   }
+  /* Navbar */
 }
