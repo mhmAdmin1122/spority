@@ -12,7 +12,7 @@ const EventsPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Events - StartupMAXIM</title>
+        <title>Events - Spority</title>
       </Head>
       <EventsHero
         imageSrc1={eventpic1}

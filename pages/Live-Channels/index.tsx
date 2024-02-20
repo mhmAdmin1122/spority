@@ -9,7 +9,7 @@ const LiveChannelsPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Live Channels - StartupMAXIM</title>
+        <title>Live Channels - Spority</title>
       </Head>
       <Channels />
       <Pricing />
