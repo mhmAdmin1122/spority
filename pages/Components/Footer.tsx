@@ -43,7 +43,7 @@ const Footer = () => {
           <Link href="/">Who we are?</Link>
           <Link href="/">Our Mission</Link>
           <Link href="/">Our Team</Link>
-          <Link href="/">Privacy Policy</Link>
+          <Link href="/Privacy-Policy">Privacy Policy</Link>
           <Link href="/">Disclaimer</Link>
         </div>
       </div>

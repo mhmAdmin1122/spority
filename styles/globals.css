@@ -124,25 +124,35 @@
 }
 /* newlatter-form-box */
 
-
 /* contact-section-box */
-.contact-section-box{
+.contact-section-box {
   @apply bg-[#000] text-[#fff] px-[40px] py-[60px] border-b-[10px] border-[#ff4500];
 }
-.contact-form-section-spority{
+.contact-form-section-spority {
   @apply flex items-center justify-center gap-12 flex-wrap py-[60px] w-full;
 }
-.contact-form-section-spority input{
+.contact-form-section-spority input {
   @apply px-[20px] py-[10px] rounded-full text-[#212121] outline-none w-[35%];
 }
-.contact-form-section-spority textarea{
+.contact-form-section-spority textarea {
   @apply py-[10px] px-[20px] rounded-lg w-[72.5%] outline-none;
 }
-.contact-btn-form-spority{
+.contact-btn-form-spority {
   @apply w-[72.5%] bg-[#ff4500] text-[#000] text-[20px] font-bold rounded-full px-[40px] py-[10px];
 }
 /* contact-section-box */
 
+/* privacy-policy-section */
+.privacy-policy-section-box::-webkit-scrollbar {
+  @apply hidden;
+}
+.privacy-policy-section h2,
+.privacy-policy-section h3,
+.privacy-policy-section h4,
+.privacy-policy-section strong {
+  @apply text-[#ff4500];
+}
+/* privacy-policy-section */
 
 /* hero-banners */
 .HomeHeroBanner {
@@ -162,10 +172,10 @@
   .destop-tabsview-tabs-authBtn {
     @apply hidden;
   }
-  .contact-section-box{
+  .contact-section-box {
     @apply px-[10px];
   }
-  .contact-form-section-spority input{
+  .contact-form-section-spority input {
     @apply px-[10px] py-[10px] rounded-full text-[#212121] outline-none w-[72.5%];
   }
   .mobileview-tabs2view-dropdown {
