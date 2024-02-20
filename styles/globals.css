@@ -2,32 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* navbar */
+.navbar {
+  @apply w-full flex items-center justify-between bg-[#000] text-[#fff] px-[40px] py-2;
 }
+.navbar-logoBox {
+  @apply w-[120px];
+}
+.authBtn {
+  @apply flex items-center gap-2 ease-in-out text-[#000] px-[20px] py-[10px] rounded-md hover:bg-[#000] hover:text-[#ff4500] border-2 border-[#ff4500] transition-all duration-700 delay-300 hover:border-[#ff4500] bg-[#ff4500];
+}
+.destop-tabsview-tabs-authBtn,
+.destop-tabsview-tabsBox {
+  @apply flex justify-between items-center;
+}
+.destop-tabsview-tabsBox {
+  @apply gap-10 font-medium;
+}
+.destop-tabsview-tabs-authBtn {
+  @apply gap-16;
+}
+.mobileview-tabs2view-dropdown {
+  /* @apply text-[40px] cursor-pointer; */
+  @apply hidden;
+}
+/* navbar */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* footer */
+.footer {
+  @apply flex items-start flex-wrap justify-center px-[40px] py-[20px] gap-14 border-t-2 border-gray-200;
 }
+.footer-innerBox {
+  @apply w-[200px];
+}
+.footer-links-liveChannels h3,
+.footer-links-followUs h3,
+.footer-links-help h3,
+.footer-links-aboutUS h3 {
+  @apply text-[30px] font-bold;
+}
+.Footer-channel-links-box,
+.Footer-follow-links-box,
+.Footer-help-links-box,
+.Footer-help-links-box {
+  @apply flex flex-col flex-wrap gap-4 items-start py-4 font-medium;
+}
+.copyright-line-footer {
+  @apply bg-[#000] px-[40px] text-center text-wrap py-[10px] text-[#fff];
+}
+/* footer */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* newlatter-box */
+.newlatter-box{
+    background-image: url("/img/newslatterbg.svg");
 }
+/* newlatter-box */

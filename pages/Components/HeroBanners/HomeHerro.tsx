@@ -1,0 +1,32 @@
+import Image from "next/image";
+import React from "react";
+import HeroPic1 from "@/public/img/heroHomepic1.svg";
+import illustPic from '@/public/img/thrillbattle.png'
+import AuthBtn from "../AuthBtn";
+
+const HomeHerro = () => {
+  return (
+    <div className="HomeHeroBanner border-b-[10px] border-[#ff4500] flex flex-wrap items-center gap-6 justify-between px-[40px] py-[60px] bg-[#000] text-[#fff]">
+      <div className="homeHero-innerBox hero-contentBox w-[420px]">
+        <div className="flex flex-wrap gap-4 items-center py-3">
+          <Image src={HeroPic1} alt="tv-pic" />
+          <h3 className="text-[28px] font-bold">Your Stadium Seat for</h3>
+        </div>
+        <h1 className="text-[45px] font-bold">Thrilling Battles</h1>
+        <p className="text-[14px] text-gray-400 font-medium w-full py-4">
+          Lorem ipsum dolor sit amet consectetur. Scelerisque pretium in posuere
+          consectetur egestas ipsum purus molestie mauris. Neque quis aliquam et
+          ut lorem neque. Ultrices duis amet lorem amet ac. Tortor in ultrices
+          urna diam parturient at varius euismod lacus.
+        </p>
+        <AuthBtn />
+      </div>
+
+      <div className="homeHero-innerBox hero-illust-Box w-1/2">
+        <Image src={illustPic} alt="illust-homeHero-pic" />
+      </div>
+    </div>
+  );
+};
+
+export default HomeHerro;
