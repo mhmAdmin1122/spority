@@ -3,6 +3,7 @@ import Layout from '../Components/Layout'
 import Head from 'next/head'
 import Channels from '../Components/Sections/Channels'
 import Pricing from '../Components/Sections/Pricing'
+import NewsLatter from '../Components/Sections/NewsLatter'
 
 const LiveChannelsPage = () => {
   return (
@@ -12,6 +13,7 @@ const LiveChannelsPage = () => {
       </Head>
       <Channels />
       <Pricing />
+      <NewsLatter />
     </Layout>
   )
 }
