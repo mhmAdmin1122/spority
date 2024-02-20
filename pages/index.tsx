@@ -4,6 +4,7 @@ import HomeHerro from "./Components/HeroBanners/HomeHerro";
 import Clashes from "./Components/Sections/Clashes";
 import News from "./Components/Sections/News";
 import NewsLatter from "./Components/Sections/NewsLatter";
+import ScoreCard from "./Components/Sections/ScoreCard";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       </Head>
       <section className="">
         <HomeHerro />
+        <ScoreCard />
         <Clashes />
         <News />
         <NewsLatter />
