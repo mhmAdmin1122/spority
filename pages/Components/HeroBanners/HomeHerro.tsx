@@ -6,7 +6,7 @@ import AuthBtn from "../AuthBtn";
 
 const HomeHerro = () => {
   return (
-    <div className="HomeHeroBanner border-b-[10px] border-[#ff4500] flex flex-wrap items-center gap-6 justify-between px-[40px] py-[60px] bg-[#000] text-[#fff]">
+    <div className="HomeHeroBanner">
       <div className="homeHero-innerBox hero-contentBox w-[420px]">
         <div className="flex flex-wrap gap-4 items-center py-3">
           <Image src={HeroPic1} alt="tv-pic" />

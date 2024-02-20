@@ -6,9 +6,9 @@ import newspic from "@/public/img/clash.svg";
 
 const News = () => {
   return (
-    <div className="bg-[#000] border-b-[10px] border-[#ff4500] text-[#fff] px-[40px] py-[60px]">
+    <div className="news-section-box">
       <SectionHeader title="Top News" />
-      <div className="py-[60px] flex items-center flex-wrap justify-center gap-12">
+      <div className="news-section-cardbox">
         <NewsCard
           cardTilte="Bushra Bibi is playing a crucial role"
           cardDescription="Lorem ipsum dolor sit amet consectetur. Scelerisque pretium."

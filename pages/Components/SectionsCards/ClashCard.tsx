@@ -9,16 +9,15 @@ const ClashCard = ({cardPic, altText, videoSec, videoLink}:any) => {
     setIsShown((current) => !current);
   };
   return (
-    <Link href={`${videoLink}`} className="clashes-cards w-[260px] relative rounded-md overflow-hidden">
+    <Link href={`${videoLink}`} className="clashes-cards">
       <Image
         src={cardPic}
         alt={altText}
-        className="w-full h-full cursor-pointer"
         onMouseOver={handleHover}
         onMouseOut={handleHover}
       />
       {isShown && (
-        <b className="absolute bottom-1 right-1 bg-[#111111cc] px-[15px] py-[7px] rounded-md cursor-context-menu">
+        <b className="time-stamp-clash-card">
           {videoSec} sec
         </b>
       )}

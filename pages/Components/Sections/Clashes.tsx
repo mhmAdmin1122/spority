@@ -6,9 +6,9 @@ import ViewMoreBtn from "../ViewMoreBtn";
 
 const Clashes = () => {
   return (
-    <div className="bg-[#000] border-b-[10px] border-[#ff4500] text-[#fff] px-[40px] py-[60px]">
+    <div className="clashes-section-box">
       <SectionHeader title="Top Clashes" />
-      <div className="py-[60px] flex items-center flex-wrap justify-center gap-12">
+      <div className="clashes-section-cardbox">
         <ClashCard
           cardPic={clash}
           altText="clash-pic"
