@@ -1,5 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
+import england from "@/public/img/england.svg";
+import australia from "@/public/img/australia.svg";
 
 const Sliders = () => {
   var settings = {
@@ -38,34 +42,18 @@ const Sliders = () => {
   };
 
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>7</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
-      </Slider>
-    </div>
+    <Slider {...settings} className="w-[full]">
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+    </Slider>
   );
 };
 

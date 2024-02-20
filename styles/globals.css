@@ -129,3 +129,12 @@
   @apply border-b-[10px] border-[#ff4500] flex flex-wrap items-center gap-6 justify-between px-[40px] py-[60px] bg-[#000] text-[#fff];
 }
 /* hero-banners */
+
+@media (max-width: 800px) and (min-width: 300px) {
+  .destop-tabsview-tabs-authBtn {
+    @apply hidden;
+  }
+  .mobileview-tabs2view-dropdown {
+    @apply block text-4xl;
+  }
+}

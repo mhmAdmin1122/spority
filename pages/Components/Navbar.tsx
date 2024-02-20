@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="destop-tabsview-tabs-authBtn">
         <div className="destop-tabsview-tabsBox">
           <Link href="/">Home</Link>
-          <Link href="/">Live Channels</Link>
+          <Link href="/Live-Channels">Live Channels</Link>
           <Link href="/">Events</Link>
           <Link href="/">About</Link>
         </div>

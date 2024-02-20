@@ -8,7 +8,7 @@ const NewsLatter = () => {
           <h3 className="newslatter-form-heading">
             Subscribe For More
           </h3>
-          <div className="input-Boxes-newslatter-form">
+          <div className="input-Boxes-newslatter-form text-[#212121]">
             <input
               type="text"
               placeholder="Name"
