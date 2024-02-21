@@ -4,6 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer">
+      {/* Live-channels */}
       <div className="footer-innerBox footer-links-liveChannels">
         <h3>Live Channels</h3>
         <div className="Footer-channel-links-box">
@@ -15,6 +16,7 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Follow us */}
       <div className="footer-innerBox footer-links-followUs">
         <h3>Follow Us</h3>
         <div className="Footer-follow-links-box">
@@ -26,10 +28,11 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Help */}
       <div className="footer-innerBox footer-links-help">
         <h3>Help</h3>
         <div className="Footer-help-links-box">
-          <Link href="/">Contact Service</Link>
+          <Link href="/Contact">Contact Service</Link>
           <Link href="/">Create a Meeting</Link>
           <Link href="/">Describe Problem</Link>
           <Link href="/">FAQ</Link>
@@ -37,6 +40,7 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* About-list */}
       <div className="footer-innerBox footer-links-aboutUS">
         <h3>About Us</h3>
         <div className="Footer-help-links-box">
