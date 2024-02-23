@@ -132,7 +132,7 @@
   @apply flex items-center justify-center gap-12 flex-wrap py-[60px] w-full;
 }
 .contact-form-section-spority input {
-  @apply px-[20px] py-[10px] rounded-full text-[#212121] outline-none w-[35%];
+  @apply px-[20px] py-[10px] rounded-[8px] text-[#212121] outline-none w-[35%];
 }
 .contact-form-section-spority textarea {
   @apply py-[10px] px-[20px] rounded-lg w-[72.5%] outline-none;
