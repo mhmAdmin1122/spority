@@ -15,7 +15,7 @@ const BlogCard = ({cardPic, postUrl, cardTitle, cardDescription}:any) => {
         >
           {cardTitle}
         </Link>
-        <p className='text-justify'>{cardDescription.slice(0, 100)}.....</p>
+        <p className='text-justify'>{cardDescription?.slice(0, 100)}.....</p>
         <button className='bg-[#000] text-[#fff] font-bold px-[20px] py-[8px] rounded-lg'>Read Now &rarr;</button>
       </div>
     </div>
