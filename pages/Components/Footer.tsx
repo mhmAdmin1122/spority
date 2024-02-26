@@ -33,10 +33,10 @@ const Footer = () => {
         <h3>Help</h3>
         <div className="Footer-help-links-box">
           <Link href="/Contact">Contact Service</Link>
-          <Link href="/">Create a Meeting</Link>
+          {/* <Link href="/">Create a Meeting</Link> */}
           <Link href="/Describe-Problems">Describe Problem</Link>
-          <Link href="/">FAQ</Link>
-          <Link href="/">FeedBack</Link>
+          <Link href="/FAQ's">FAQ</Link>
+          <Link href="/Feed-Backs">FeedBack</Link>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
         <h3>About Us</h3>
         <div className="Footer-help-links-box">
           <Link href="/">Who we are?</Link>
-          <Link href="/">Our Mission</Link>
+          {/* <Link href="/">Our Mission</Link> */}
           <Link href="/">Our Team</Link>
           <Link href="/Privacy-Policy">Privacy Policy</Link>
           <Link href="/Disclaimers">Disclaimer</Link>

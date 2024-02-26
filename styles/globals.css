@@ -192,7 +192,7 @@
   @apply flex items-center justify-center flex-wrap py-[60px] w-full font-semibold;
 }
 .feedback-form-section-spority input {
-  @apply px-[20px] py-[10px] my-2 rounded-full w-full text-[#212121] outline-none;
+  @apply px-[20px] py-[10px] my-2 rounded-lg w-full text-[#212121] outline-none;
 }
 .feedback-form-section-spority textarea {
   @apply py-[10px] px-[20px] my-2 rounded-lg w-full outline-none text-[#212121];
