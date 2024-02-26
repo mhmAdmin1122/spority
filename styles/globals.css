@@ -132,14 +132,14 @@
   @apply flex items-center justify-center gap-12 flex-wrap py-[60px] w-full;
 }
 .contact-form-section-spority input {
-  @apply px-[20px] py-[10px] rounded-[8px] text-[#212121] outline-none w-[35%];
+  @apply px-[20px] py-[10px] rounded-full text-[#212121] outline-none w-[35%];
 }
 .contact-form-section-spority textarea {
-  @apply py-[10px] px-[20px] rounded-lg w-[72.5%] outline-none;
+  @apply py-[10px] px-[20px] rounded-lg w-[72.5%] outline-none text-black;
 }
 .contact-btn-form-spority {
   @apply w-[72.5%] bg-[#ff4500] text-[#000] text-[20px] font-bold rounded-full px-[40px] py-[10px];
-} 
+}
 /* contact-section-box */
 
 /* privacy-policy-section */
@@ -159,6 +159,65 @@
   @apply border-b-[10px] border-[#ff4500] flex flex-wrap items-center gap-6 justify-between px-[40px] py-[60px] bg-[#000] text-[#fff];
 }
 /* hero-banners */
+
+/* Disclaimer-Section */
+.disclaimer-section {
+  @apply pt-[60px];
+}
+.disclaimer-section .heading {
+  @apply text-[28px] font-bold text-[#ff4500];
+}
+.disclaimer-section p {
+  @apply py-[10px];
+}
+/* Disclaimer-Section */
+
+/* Describe-Problem */
+.problem-form-section-spority {
+  @apply flex items-center justify-center gap-12 flex-wrap py-[60px] w-full font-semibold;
+}
+.problem-form-section-spority input {
+  @apply px-[20px] py-[10px] rounded-lg text-[#212121] outline-none w-[35%];
+}
+.problem-form-section-spority textarea {
+  @apply py-[10px] px-[20px] rounded-lg w-[72.5%] outline-none text-[#212121];
+}
+.problem-btn-form-spority {
+  @apply w-[72.5%] bg-[#ff4500] text-[#000] text-[20px] font-bold rounded-full px-[40px] py-[10px];
+}
+/* Describe-Problem */
+
+/* Feedback-Section */
+.feedback-form-section-spority {
+  @apply flex items-center justify-center flex-wrap py-[60px] w-full font-semibold;
+}
+.feedback-form-section-spority input {
+  @apply px-[20px] py-[10px] my-2 rounded-full w-full text-[#212121] outline-none;
+}
+.feedback-form-section-spority textarea {
+  @apply py-[10px] px-[20px] my-2 rounded-lg w-full outline-none text-[#212121];
+}
+.feedback-form-section-spority .rating {
+  @apply mb-4 flex gap-2 items-center;
+}
+.feedback-form-section-spority .rating label {
+  @apply text-2xl font-semibold;
+}
+.feedback-form-section-spority .rating .stars {
+  @apply flex items-center px-1 mt-1 text-xl;
+}
+.feedback-btn-form-spority {
+  @apply w-full bg-[#ff4500] text-[#000] text-[20px] font-bold rounded-full px-[40px] py-[10px];
+}
+.faq-section-spority {
+  @apply max-w-xl mx-auto border border-solid border-gray-300 rounded-[10px];
+}
+.faq-section-box {
+  @apply mt-4 rounded-[10px] border-b border-gray-300 select-none;
+}
+.faq-section-box .answer-question {
+  @apply text-[#ff4500] flex items-center justify-between cursor-pointer;
+}
 
 @media (max-width: 800px) and (min-width: 451px) {
   .destop-tabsview-tabs-authBtn {

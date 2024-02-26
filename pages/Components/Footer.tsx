@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="Footer-help-links-box">
           <Link href="/Contact">Contact Service</Link>
           <Link href="/">Create a Meeting</Link>
-          <Link href="/">Describe Problem</Link>
+          <Link href="/Describe-Problems">Describe Problem</Link>
           <Link href="/">FAQ</Link>
           <Link href="/">FeedBack</Link>
         </div>
