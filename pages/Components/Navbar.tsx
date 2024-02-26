@@ -17,6 +17,7 @@ const Navbar = () => {
           <Link href="/">Home</Link>
           <Link href="/Live-Channels">Live Channels</Link>
           <Link href="/Events">Events</Link>
+          <Link href="/Blog">Blog</Link>
           <Link href="/Contact">Contact</Link>
         </div>
         <AuthBtn />
