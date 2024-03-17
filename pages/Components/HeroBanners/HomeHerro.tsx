@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import HeroPic1 from "@/public/img/heroHomepic1.svg";
-import illustPic from '@/public/img/thrillbattle.png'
+import illustPic from "@/public/img/thrillbattle.png";
 import AuthBtn from "../AuthBtn";
 
 const HomeHerro = () => {
@@ -14,10 +14,9 @@ const HomeHerro = () => {
         </div>
         <h1 className="text-[45px] font-bold">Thrilling Battles</h1>
         <p className="text-[14px] text-gray-400 font-medium w-full py-4">
-          Lorem ipsum dolor sit amet consectetur. Scelerisque pretium in posuere
-          consectetur egestas ipsum purus molestie mauris. Neque quis aliquam et
-          ut lorem neque. Ultrices duis amet lorem amet ac. Tortor in ultrices
-          urna diam parturient at varius euismod lacus.
+          Immerse yourself in the pulse-pounding excitement as athletes compete
+          for glory, all from the convenience of your own space. Don{"'"}t miss
+          this unparalleled sports experience {"–"} reserve your spot now!
         </p>
         <AuthBtn />
       </div>
