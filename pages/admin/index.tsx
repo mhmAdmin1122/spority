@@ -9,7 +9,7 @@ const AdminHome = () => {
         <title>Spority - Admin</title>
       </Head>
       <Layout>
-        <div className="px-[30px] py-[40px]">Spority Admin</div>
+        <div className="">Spority Admin</div>
       </Layout>
     </div>
   );

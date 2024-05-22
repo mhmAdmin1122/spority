@@ -1,0 +1,3 @@
+.admin-child-box::-webkit-scrollbar{
+    @apply w-0;
+}
