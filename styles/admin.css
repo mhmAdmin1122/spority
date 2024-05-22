@@ -1,3 +1,9 @@
-.admin-child-box::-webkit-scrollbar{
-    @apply w-0;
+.admin-child-body-box::-webkit-scrollbar {
+  @apply w-0;
+}
+.admin-child-body-box {
+  @apply bg-[#ffffff31] w-[75%] rounded-lg h-[87vh] p-6 overflow-scroll overflow-x-hidden select-none border-[1px] border-gray-500;
+}
+.side-bar-admin{
+    @apply bg-[#161616] w-[280px] h-[87vh] rounded-lg p-6;
 }
