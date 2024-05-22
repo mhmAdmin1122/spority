@@ -12,6 +12,7 @@ import {
   MdOutlineHome,
 } from "react-icons/md";
 import { TbDeviceDesktopAnalytics } from "react-icons/tb";
+import { IoSettingsOutline } from "react-icons/io5";
 
 const Layout = ({ children }: any) => {
   const [dropdown, setDropdown] = useState(false);
@@ -24,57 +25,66 @@ const Layout = ({ children }: any) => {
       <div className="absolute z-40 w-full flex h-full justify-center items-center">
         <div className="w-[95%] h-[94vh] rounded-lg p-6">
           <div className="flex gap-8 items-start justify-start h-full">
-            <div className="side-bar-admin">
-              <Link href="/admin">Spority Live</Link>
-              <div className="pt-8 flex flex-col gap-2">
-                <Link href="/admin" className="flex items-center gap-2">
-                  <MdOutlineHome className="text-xl" />
-                  <h2 className="hover:underline">Overview</h2>
-                </Link>
-                <div className="admin-Content-Management-dropdown">
-                  <div
-                    className="flex items-center gap-2"
-                    onClick={opendropDown}
-                  >
-                    <MdManageSearch className="text-xl" />
-                    <h3 className="cursor-pointer">Content Management</h3>
-                    {dropdown ? (
-                      <FaAngleDown className="cursor-pointer" />
-                    ) : (
-                      <FaAngleRight className="cursor-pointer" />
+            <div className="side-bar-admin justify-between flex flex-col">
+              <div className="flex flex-col">
+                <Link href="/admin">Spority Live</Link>
+                <div className="pt-8 flex flex-col gap-2">
+                  <Link href="/admin" className="flex items-center gap-2">
+                    <MdOutlineHome className="text-xl" />
+                    <h2 className="hover:underline">Overview</h2>
+                  </Link>
+                  <div className="admin-Content-Management-dropdown">
+                    <div
+                      className="flex items-center gap-2"
+                      onClick={opendropDown}
+                    >
+                      <MdManageSearch className="text-xl" />
+                      <h3 className="cursor-pointer">Content Management</h3>
+                      {dropdown ? (
+                        <FaAngleDown className="cursor-pointer" />
+                      ) : (
+                        <FaAngleRight className="cursor-pointer" />
+                      )}
+                    </div>
+                    {dropdown && (
+                      <div className="admin-drop-down-tabs flex flex-col gap-2 pt-2 pl-4">
+                        <Link
+                          href="/admin/channels"
+                          className="flex items-center gap-2"
+                        >
+                          <GrChannel className="text-base" />
+                          <h2 className="hover:underline">Channels</h2>
+                        </Link>
+                        <Link
+                          href="/admin/post"
+                          className="flex items-center gap-2"
+                        >
+                          <BsPostcard className="text-base" />
+                          <h2 className="hover:underline">Post</h2>
+                        </Link>
+                      </div>
                     )}
                   </div>
-                  {dropdown && (
-                    <div className="admin-drop-down-tabs flex flex-col gap-2 pt-2 pl-4">
-                      <Link
-                        href="/admin/channels"
-                        className="flex items-center gap-2"
-                      >
-                        <GrChannel className="text-base" />
-                        <h2 className="hover:underline">Channels</h2>
-                      </Link>
-                      <Link
-                        href="/admin/post"
-                        className="flex items-center gap-2"
-                      >
-                        <BsPostcard className="text-base" />
-                        <h2 className="hover:underline">Post</h2>
-                      </Link>
-                    </div>
-                  )}
+                  <Link
+                    href="/admin/events"
+                    className="flex items-center gap-2"
+                  >
+                    <MdOutlineEmojiEvents className="text-xl" />
+                    <h2 className="hover:underline">Events</h2>
+                  </Link>
+                  <Link
+                    href="/admin/analytics"
+                    className="flex items-center gap-2"
+                  >
+                    <TbDeviceDesktopAnalytics className="text-xl" />
+                    <h2 className="hover:underline">Analytics</h2>
+                  </Link>
                 </div>
-                <Link href="/admin/events" className="flex items-center gap-2">
-                  <MdOutlineEmojiEvents className="text-xl" />
-                  <h2 className="hover:underline">Events</h2>
-                </Link>
-                <Link
-                  href="/admin/analytics"
-                  className="flex items-center gap-2"
-                >
-                  <TbDeviceDesktopAnalytics className="text-xl" />
-                  <h2 className="hover:underline">Analytics</h2>
-                </Link>
               </div>
+              <Link href="/admin/setting" className="flex items-center gap-2">
+                <IoSettingsOutline className="text-xl" />
+                <h2 className="hover:underline">Setting</h2>
+              </Link>
             </div>
             <div className="admin-child-body-box">{children}</div>
           </div>
