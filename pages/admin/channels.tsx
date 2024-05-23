@@ -10,7 +10,7 @@ const ChannelsPage = () => {
         <title>Spority - Admin Channels</title>
       </Head>
       <div className='relative flex flex-col gap-2'>
-        <div className='body-box-topBar-channels flex gap-8 justify-end w-full bg-[#7a7a7a] py-4 px-6 rounded-t-md'>
+        <div className='body-box-topBar-channels flex gap-8 justify-end w-full py-4 px-6 rounded-t-md'>
           <h3>Traffic</h3>
           <h3>Live Watching</h3>
           <h3>Overview</h3>
