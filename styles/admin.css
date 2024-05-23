@@ -1,4 +1,6 @@
-.admin-child-body-box::-webkit-scrollbar, .channels-list::-webkit-scrollbar {
+.admin-child-body-box::-webkit-scrollbar,
+.post-list::-webkit-scrollbar,
+.channels-list::-webkit-scrollbar {
   @apply w-0;
 }
 .admin-child-body-box {
@@ -6,4 +8,14 @@
 }
 .side-bar-admin {
   @apply bg-[#161616] w-[280px] h-[87vh] rounded-lg p-6;
+}
+
+.add-post-btn-admin {
+  /* background-image: linear-gradient(60deg, #ff4500, #ffff00); */
+  @apply absolute -top-1 left-0 rounded-[2.86px] font-medium px-3 py-1 text-black;
+  background: linear-gradient(
+    102.94deg,
+    #ff4500 -14.44%,
+    rgba(255, 255, 0, 0.24) 267.78%
+  );
 }
