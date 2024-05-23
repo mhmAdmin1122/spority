@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Layout from "./components/Layout";
+import Grossviewcard from "./components/Grossviewcard";
 
 const AdminHome = () => {
   return (
@@ -9,7 +10,9 @@ const AdminHome = () => {
         <title>Spority - Admin Home</title>
       </Head>
       <Layout>
-        <div className="">Spority Admin</div>
+        <div className="">
+          <Grossviewcard />
+        </div>
       </Layout>
     </div>
   );
