@@ -17,19 +17,22 @@ import Login from "../components/Login";
 
 const Layout = ({ children }: any) => {
   const [dropdown, setDropdown] = useState(false);
-  const opendropDown = () => {
-    setDropdown((current) => !current);
-  };
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [avatar, setAvatar] = useState("");
+  const [username, setUsername] = useState("");
 
   useEffect(() => {
     const auth = localStorage.getItem("isAuthenticated");
     if (auth === "true") {
       setIsAuthenticated(true);
+      setAvatar(localStorage.getItem("avatar") || "");
+      setUsername(localStorage.getItem("username") || "");
     }
 
     const handleBeforeUnload = () => {
       localStorage.removeItem("isAuthenticated");
+      localStorage.removeItem("avatar");
+      localStorage.removeItem("username");
     };
 
     window.addEventListener("beforeunload", handleBeforeUnload);
@@ -41,11 +44,19 @@ const Layout = ({ children }: any) => {
 
   const handleLogin = () => {
     setIsAuthenticated(true);
+    setAvatar(localStorage.getItem("avatar") || "");
+    setUsername(localStorage.getItem("username") || "");
   };
 
   const handleLogout = () => {
     localStorage.removeItem("isAuthenticated");
+    localStorage.removeItem("avatar");
+    localStorage.removeItem("username");
     setIsAuthenticated(false);
+  };
+
+  const opendropDown = () => {
+    setDropdown((current) => !current);
   };
 
   return (
@@ -59,6 +70,7 @@ const Layout = ({ children }: any) => {
                   <div className="side-bar-admin justify-between flex flex-col">
                     <div className="flex flex-col">
                       <Link href="/admin">Spority Live</Link>
+                      
                       <div className="pt-8 flex flex-col gap-2">
                         <Link href="/admin" className="flex items-center gap-2">
                           <MdOutlineHome className="text-xl" />
@@ -113,6 +125,18 @@ const Layout = ({ children }: any) => {
                           <h2 className="hover:underline">Analytics</h2>
                         </Link>
                       </div>
+
+                      <div className="flex items-center gap-4 pt-8">
+                        {avatar && (
+                          <img
+                            src={avatar}
+                            alt={`${username}`}
+                            title={`${username}`}
+                            className="w-12 h-12 rounded-full"
+                          />
+                        )}
+                        <span className="select-none">{username}</span>
+                      </div>
                     </div>
                     <div className="flex items-center gap-4 justify-between">
                       <Link
@@ -146,12 +170,6 @@ const Layout = ({ children }: any) => {
       ) : (
         <Login onLogin={handleLogin} />
       )}
-      {/* <div>
-      <Header />
-        <div className="adminBodyBox w-[100%] p-[30px] h-full bg-[#c0f2f8] min-h-screen">
-          <div>{children}</div>
-        </div>
-      </div> */}
     </>
   );
 };
