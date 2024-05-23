@@ -10,7 +10,7 @@
   @apply bg-[#161616] w-[280px] h-[87vh] rounded-lg p-6;
 }
 
-.add-post-btn-admin {
+.add-post-btn-admin, .add-channel-btn-admin {
   /* background-image: linear-gradient(60deg, #ff4500, #ffff00); */
   @apply absolute -top-1 left-0 rounded-[2.86px] font-medium px-3 py-1 text-black;
   background: linear-gradient(
