@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "./components/Layout";
 import Head from "next/head";
 import PostCard from "./components/PostCard";
+import Link from 'next/link'
 
 const PostPage = () => {
   return (
@@ -10,9 +11,9 @@ const PostPage = () => {
         <title>Spority - Admin Post</title>
       </Head>
       <div className="relative">
-        <button className="add-post-btn-admin">
+        <Link href="/admin/postform" className="add-post-btn-admin">
           Add Post
-        </button>
+        </Link>
         <div className="body-box-topBar-post flex gap-8 justify-end w-full py-4 px-6 rounded-t-md">
           <h3 className="w-[90px]">Impression</h3>
           <h3 className="w-[90px]">engagement</h3>
