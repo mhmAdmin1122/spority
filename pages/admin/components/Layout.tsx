@@ -69,7 +69,19 @@ const Layout = ({ children }: any) => {
                 <div className="flex gap-8 items-start justify-start h-full">
                   <div className="side-bar-admin justify-between flex flex-col">
                     <div className="flex flex-col">
-                      <Link href="/admin">Spority Live</Link>
+                      {/* <Link href="/admin">Spority Live</Link> */}
+
+                      <div className="flex items-center gap-4 pt-4 justify-center">
+                        {avatar && (
+                          <img
+                            src={avatar}
+                            alt={`${username}`}
+                            title={`${username}`}
+                            className="w-12 h-12 rounded-full"
+                          />
+                        )}
+                        <span className="select-none">{username}</span>
+                      </div>
                       
                       <div className="pt-8 flex flex-col gap-2">
                         <Link href="/admin" className="flex items-center gap-2">
@@ -126,17 +138,7 @@ const Layout = ({ children }: any) => {
                         </Link>
                       </div>
 
-                      <div className="flex items-center gap-4 pt-8">
-                        {avatar && (
-                          <img
-                            src={avatar}
-                            alt={`${username}`}
-                            title={`${username}`}
-                            className="w-12 h-12 rounded-full"
-                          />
-                        )}
-                        <span className="select-none">{username}</span>
-                      </div>
+                      
                     </div>
                     <div className="flex items-center gap-4 justify-between">
                       <Link
