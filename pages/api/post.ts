@@ -5,6 +5,7 @@ export default async function handle(req: any, res: any) {
   const { method } = req;
   await mongooseConnection();
 
+  // posting data in api
   if (method === "POST") {
     const {
       title,
@@ -61,5 +62,10 @@ export default async function handle(req: any, res: any) {
       subDescription7,
     });
     res.json(postDoc);
+  }
+
+  // getting data from api
+  if (method === "GET") {
+    res.json(await Post.find());
   }
 }
