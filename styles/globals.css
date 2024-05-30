@@ -241,3 +241,18 @@
     @apply block text-4xl;
   }
 }
+
+
+.event-card {
+  @apply relative overflow-hidden;
+}
+
+.watch-now-btn {
+  @apply bottom-[-40px] left-[50%];
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease-in-out;
+}
+
+.event-card:hover .watch-now-btn {
+  @apply bottom-[10px];
+}

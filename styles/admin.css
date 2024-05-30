@@ -2,6 +2,7 @@
 .post-list::-webkit-scrollbar,
 .events-list::-webkit-scrollbar,
 .postform-box-admin::-webkit-scrollbar,
+.listof-event::-webkit-scrollbar,
 .channel-uploader-list-form::-webkit-scrollbar,
 .channels-list::-webkit-scrollbar {
   @apply w-0;
