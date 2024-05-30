@@ -28,7 +28,7 @@ const ChannelCard = () => {
       ) : (
         <div className="channels-list flex flex-col w-full gap-4 h-[430px] overflow-scroll overflow-x-hidden">
           {channel?.map((channel: any) => (
-            <div className="relative flex items-center justify-between py-4 px-6 bg-[#F0F0F0] rounded-md">
+            <div key={channel?._id} className="relative flex items-center justify-between py-4 px-6 bg-[#F0F0F0] rounded-md">
               <div className="w-[100px] h-[100px]">
                 <Image
                   src={channel?.picture}

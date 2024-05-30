@@ -59,7 +59,7 @@ const EventsCard = () => {
       ) : (
         <div className="flex flex-wrap gap-10 justify-center h-[430px] overflow-scroll overflow-x-hidden events-list">
           {event?.map((event: any) => (
-            <div className="w-[316px] h-[190px] p-6 rounded-lg bg-[#F0F0F0] text-black flex flex-col">
+            <div key={event?._id} className="w-[316px] h-[190px] p-6 rounded-lg bg-[#F0F0F0] text-black flex flex-col">
               <h2 className="text-center font-medium text-xl pb-4">
                 {event?.name}
               </h2>
