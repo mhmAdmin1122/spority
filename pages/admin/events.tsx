@@ -12,15 +12,14 @@ const EventsPage = () => {
       </Head>
       <div>
         <div className="flex w-full justify-end pb-4">
-          <Link href="/admin/eventform" className="w-fit px-3 py-1 btn-color-bg rounded-[2.86px]">Add Events</Link>
+          <Link
+            href="/admin/eventform"
+            className="w-fit px-3 py-1 btn-color-bg rounded-[2.86px]"
+          >
+            Add Events
+          </Link>
         </div>
-        <div className="flex flex-wrap gap-10 justify-center h-[430px] overflow-scroll overflow-x-hidden events-list">
-          <EventsCard />
-          <EventsCard />
-          <EventsCard />
-          <EventsCard />
-          <EventsCard />
-        </div>
+        <EventsCard />
       </div>
     </Layout>
   );

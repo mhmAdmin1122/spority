@@ -6,6 +6,7 @@ const ChannelSchema = new Schema({
   channelurl: { type: String, required: true },
   description: { type: String, required: true },
   picture: { type: String, required: true },
+  slug: { type: String },
   date: {type: Date}
 });
 

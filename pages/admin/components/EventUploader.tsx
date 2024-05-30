@@ -5,7 +5,10 @@ import { FaCircleCheck } from "react-icons/fa6";
 const EventUploader = () => {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
-  const [eventchannel, setEventchannel] = useState("");
+  const [eventchannel1, setEventchannel1] = useState("");
+  const [eventchannel2, setEventchannel2] = useState("");
+  const [eventchannel3, setEventchannel3] = useState("");
+  const [eventCountry, setEventCountry] = useState("");
   const [description, setDescription] = useState("");
   const [picture, setPicture] = useState("");
   const [eventday, setEventday] = useState<any>(null);
@@ -31,7 +34,10 @@ const EventUploader = () => {
     const data = {
       name,
       category,
-      eventchannel,
+      eventchannel1,
+      eventchannel2,
+      eventchannel3,
+      eventCountry,
       description,
       eventday,
       eventmonth,
@@ -44,7 +50,10 @@ const EventUploader = () => {
     } else {
       setName("");
       setCategory("");
-      setEventchannel("");
+      setEventchannel1("");
+      setEventchannel2("");
+      setEventchannel3("");
+      setEventCountry("");
       setDescription("");
       setEventday(null);
       setEventmonth(null);
@@ -83,9 +92,30 @@ const EventUploader = () => {
           <input
             type="text"
             className="outline-none px-2 py-1 rounded-[2.86px] w-[83%] text-[#000]"
-            placeholder="Channel Api Base"
-            value={eventchannel}
-            onChange={(ev) => setEventchannel(ev.target.value)}
+            placeholder="Channel Api Base 1"
+            value={eventchannel1}
+            onChange={(ev) => setEventchannel1(ev.target.value)}
+          />
+          <input
+            type="text"
+            className="outline-none px-2 py-1 rounded-[2.86px] w-[83%] text-[#000]"
+            placeholder="Channel Api Base 2"
+            value={eventchannel2}
+            onChange={(ev) => setEventchannel2(ev.target.value)}
+          />
+          <input
+            type="text"
+            className="outline-none px-2 py-1 rounded-[2.86px] w-[83%] text-[#000]"
+            placeholder="Channel Api Base 3"
+            value={eventchannel3}
+            onChange={(ev) => setEventchannel3(ev.target.value)}
+          />
+          <input
+            type="text"
+            className="outline-none px-2 py-1 rounded-[2.86px] w-[83%] text-[#000]"
+            placeholder="Country Name"
+            value={eventCountry}
+            onChange={(ev) => setEventCountry(ev.target.value)}
           />
           <textarea
             rows={6}

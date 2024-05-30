@@ -1,4 +1,5 @@
 import { mongooseConnection } from "@/lib/mongoose";
+import { slugify } from "@/lib/slugify";
 import { Channel } from "@/models/channel";
 
 export default async function handle(req: any, res: any) {
@@ -8,6 +9,7 @@ export default async function handle(req: any, res: any) {
   // posting data into the api
   if (method === "POST") {
     const { name, category, channelurl, description, picture } = req.body;
+    const slug = slugify(name);
     const currentDate = new Date();
     const channelDoc = await Channel.create({
       name,
@@ -15,6 +17,7 @@ export default async function handle(req: any, res: any) {
       channelurl,
       description,
       picture,
+      slug,
       date: currentDate,
     });
     res.json(channelDoc);
