@@ -27,7 +27,7 @@ const PlayerBox = ({ channels }: any) => {
         <title>{channels?.name} Live</title>
       </Head>
       <Layout>
-        <div className="playerbox_player w-full px-14 py-12 flex flex-wrap items-start justify-between">
+        <div className="playerbox_player w-full px-14 py-12 flex flex-wrap items-start justify-between bg-[#0e0805]">
           <div className="mainbox w-[64%]">
             <iframe
               src={`${channels?.channelurl}`}
@@ -40,17 +40,18 @@ const PlayerBox = ({ channels }: any) => {
           <div className="morechannelsidPage flex flex-wrap items-center justify-center gap-8 px-3 py-8 w-[36%]">
             {channelCardData?.map((channelCardData: any) => (
               <div key={0} className="flex flex-wrap">
-                <div className="morechannelPic w-[180px] h-[140px]">
-                  <Link href={channelCardData?._id}>
+                <Link href={channelCardData?._id} className="morechannelPic">
+                  <div className="w-[160px] h-[160px]">
                     <Image
                       src={channelCardData?.picture}
                       alt={`${channels?.channelName}`}
                       width={180}
                       height={120}
+                      className="w-full h-full rounded-lg"
                     />
-                    {channelCardData?.name}
-                  </Link>
-                </div>
+                  </div>
+                  {channelCardData?.name}
+                </Link>
               </div>
             ))}
           </div>

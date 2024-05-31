@@ -26,6 +26,7 @@ const ChannelsCard = () => {
             <Image
               src={channelCardData?.picture}
               alt={`${channelCardData?.channelName}`}
+              title={`${channelCardData?.channelName}`}
               width={180}
               height={120}
               className="w-full h-full rounded-lg"
