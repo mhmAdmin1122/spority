@@ -1,12 +1,40 @@
-import Image from 'next/image'
-import React from 'react'
+import axios from "axios";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
-const ChannelsCard = ({channelPic, channelName, channelAltTextPic}:any) => {
+const ChannelsCard = () => {
+  const [channelCardData, setChannelCardData] = useState<any[]>([]);
+
+  useEffect(() => {
+    axios.get("/api/channel").then((res) => {
+      const data = res.data;
+      const shuffledData = data.sort(() => 0.5 - Math.random());
+      const selectedData = shuffledData.slice(0, 6);
+      setChannelCardData(selectedData);
+    });
+  }, []);
+
   return (
-    <div className='w-[260px] h-[160px] rounded-md overflow-hidden'>
-      <Image src={channelPic} alt={channelAltTextPic} title={channelName} className='cursor-pointer w-full h-full' />
+    <div className="flex items-center gap-24 flex-wrap justify-center py-14">
+      {channelCardData?.map((channelCardData: any) => (
+        <div
+          key={channelCardData?._id}
+          className="flex items-center gap-4"
+        >
+          <Link href={`/Live/${channelCardData?._id}`} className="w-[260px] h-[260px]">
+            <Image
+              src={channelCardData?.picture}
+              alt={`${channelCardData?.channelName}`}
+              width={180}
+              height={120}
+              className="w-full h-full rounded-lg"
+            />
+          </Link>
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default ChannelsCard
+export default ChannelsCard;

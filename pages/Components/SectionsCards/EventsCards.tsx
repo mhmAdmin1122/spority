@@ -27,7 +27,7 @@ const EventsCards = () => {
           {event?.map((event: any) => (
             <div
               key={event?._id}
-              className="w-[260px] h-[160px] object-cover overflow-hidden border-[1px] border-gray-200 rounded-lg bg-[#0C0501] text-black flex flex-col hover:shadow-md hover:shadow-gray-400 relative transition-all duration-700 ease-in-out event-card"
+              className="w-[260px] h-[160px] object-cover overflow-hidden rounded-lg bg-[#0C0501] text-black flex flex-col hover:shadow-md hover:shadow-gray-700 relative transition-all duration-700 ease-in-out event-card"
             >
               <Image
                 src={event?.picture}

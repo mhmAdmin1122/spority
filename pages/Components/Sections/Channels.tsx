@@ -2,35 +2,22 @@ import React from "react";
 import SectionHeader from "../SectionHeader";
 import ViewMoreBtn from "../ViewMoreBtn";
 import ChannelsCard from "../SectionsCards/ChannelsCard";
-import channelPic from '@/public/img/ptv-logo.svg'
+import channelPic from "@/public/img/ptv-logo.svg";
+import Link from "next/link";
 
 const Channels = () => {
   return (
-    <div className="bg-[#000] text-[#fff] border-b-[10px] border-[#ff4500] py-[60px] px-[40px]">
-      <SectionHeader title="Live Channels" />
-      <div className="py-[60px] flex flex-wrap gap-10 items-center justify-center">
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
-        <ChannelsCard channelPic={channelPic} channelName="PTV Sports" channelAltTextPic="ptv-sport-hd-live" />
+    <div className="bg-[#0e0805] text-[#fff] py-[60px] px-[40px]">
+      <div className="flex items-center justify-between">
+        <h3 className="text-4xl font-bold">Live TV Channels</h3>
+        <Link
+          href="/Live"
+          className="text-[#bd3e3c] font-medium hover:underline"
+        >
+          See All
+        </Link>
       </div>
-      <ViewMoreBtn btnText="View More..." btnUrl="/Live-Channels" />
+      <ChannelsCard />
     </div>
   );
 };

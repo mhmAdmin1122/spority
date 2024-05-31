@@ -12,7 +12,7 @@ const LiveChannelsPage = () => {
       <Head>
         <title>Live Channels - Spority</title>
       </Head>
-      <div className="flex items-start gap-4 justify-center p-5 w-full">
+      <div className="flex items-start gap-4 justify-center p-5 w-full bg-[#0e0805]">
         <div className="player-of-main-channel flex items-center justify-center w-[70%]">
           <iframe
             frameBorder="0"
@@ -21,7 +21,7 @@ const LiveChannelsPage = () => {
             name="iframe_a"
             scrolling="no"
             width="640"
-            className="w-[100%] h-[500px] rounded-md overflow-hidden"
+            className="main-channel-live-page-iframe"
           >
             Your Browser Do not Support Iframe
           </iframe>
@@ -30,10 +30,7 @@ const LiveChannelsPage = () => {
           <EventsCards />
         </div>
       </div>
-      {/*       
       <Channels />
-      <Pricing />
-      <NewsLatter /> */}
     </Layout>
   );
 };

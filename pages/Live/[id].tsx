@@ -21,12 +21,6 @@ const PlayerBox = ({ channels }: any) => {
     });
   }, []);
 
-  const [muted, setMuted] = useState(true);
-
-  const toggleMute = () => {
-    setMuted(!muted);
-  };
-
   return (
     <>
       <Head>

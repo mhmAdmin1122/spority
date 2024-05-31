@@ -8,11 +8,11 @@ const Footer = () => {
       <div className="footer-innerBox footer-links-liveChannels">
         <h3>Live Channels</h3>
         <div className="Footer-channel-links-box">
-          <Link href="/">PTV Sport</Link>
-          <Link href="/">SKY Sport</Link>
-          <Link href="/">SKY SportMix</Link>
-          <Link href="/">A Sport HD</Link>
-          <Link href="/">More Channels</Link>
+          <Link href="/Live/6659f2e86f215f50ac4ab6da">PTV Sport</Link>
+          <Link href="/Live/6659f3656f215f50ac4ab6dc">SKY Sport</Link>
+          <Link href="/Live/6659f5226f215f50ac4ab6ee">TEN Sport</Link>
+          <Link href="/Live/6659f2a36f215f50ac4ab6d6">A Sport HD</Link>
+          <Link href="/Live">More Channels</Link>
         </div>
       </div>
 

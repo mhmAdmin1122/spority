@@ -1,0 +1,3 @@
+.main-channel-live-page-iframe {
+  @apply w-[64vw] h-[81vh] overflow-hidden rounded-lg;
+}
