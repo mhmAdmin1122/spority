@@ -24,36 +24,39 @@ const PlayerBox = ({ channels }: any) => {
   return (
     <>
       <Head>
-        <title>{channels?.name} Live</title>
+        <title>{channels?.name} Live - Spority</title>
       </Head>
       <Layout>
-        <div className="playerbox_player w-full px-14 py-12 flex flex-wrap items-start justify-between bg-[#0e0805]">
-          <div className="mainbox w-[64%]">
+        <div className="playerbox_player w-full px-14 py-12 flex flex-col items-center justify-center bg-[#0e0805]">
+          <div className="mainbox w-full">
             <iframe
               src={`${channels?.channelurl}`}
               scrolling="no"
               allowFullScreen
-              className="w-[100%] h-[500px] rounded-md overflow-hidden"
+              className="w-full h-[530px]"
             />
           </div>
-
-          <div className="morechannelsidPage flex flex-wrap items-center justify-center gap-8 px-3 py-8 w-[36%]">
-            {channelCardData?.map((channelCardData: any) => (
-              <div key={0} className="flex flex-wrap">
-                <Link href={channelCardData?._id} className="morechannelPic">
-                  <div className="w-[160px] h-[160px]">
-                    <Image
-                      src={channelCardData?.picture}
-                      alt={`${channels?.channelName}`}
-                      width={180}
-                      height={120}
-                      className="w-full h-full rounded-lg"
-                    />
-                  </div>
-                  {channelCardData?.name}
-                </Link>
-              </div>
-            ))}
+          <div className="flex flex-col items-start gap-2 w-full">
+            <h2 className="text-[#fff] text-4xl font-bold pt-12">Watch More Channels</h2>
+            <div className="morechannelsidPage flex flex-wrap items-center justify-center gap-8 px-3 py-8 w-full">
+              {channelCardData?.map((channelCardData: any) => (
+                <div key={0} className="flex flex-wrap">
+                  <Link href={channelCardData?._id} className="morechannelPic flex flex-col items-center gap-2">
+                    <div className="w-[120px] h-[120px]">
+                      <Image
+                        src={channelCardData?.picture}
+                        alt={`${channelCardData?.name}`}
+                        title={`${channelCardData?.name}`}
+                        width={180}
+                        height={120}
+                        className="w-full h-full rounded-full cursor-context-menu"
+                      />
+                    </div>
+                    <p className="font-medium text-[#bd3e3c] hover:underline">{channelCardData?.name}</p>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </Layout>

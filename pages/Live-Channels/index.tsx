@@ -31,6 +31,10 @@ const LiveChannelsPage = () => {
         </div>
       </div>
       <Channels />
+      <div className="bg-[#0e0805]">
+
+      </div>
+
     </Layout>
   );
 };

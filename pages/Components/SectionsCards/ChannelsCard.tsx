@@ -25,8 +25,8 @@ const ChannelsCard = () => {
           <Link href={`/Live/${channelCardData?._id}`} className="w-[260px] h-[260px]">
             <Image
               src={channelCardData?.picture}
-              alt={`${channelCardData?.channelName}`}
-              title={`${channelCardData?.channelName}`}
+              alt={`${channelCardData?.name}`}
+              title={`${channelCardData?.name}`}
               width={180}
               height={120}
               className="w-full h-full rounded-lg"
