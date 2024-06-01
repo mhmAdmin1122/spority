@@ -12,10 +12,10 @@ import Slider from "react-slick";
 const EventsPage = () => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 4000,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -64,7 +64,7 @@ const EventsPage = () => {
         EventAltText3="bpl-match-pic"
       /> */}
       <Channels />
-      <Pricing />
+      {/* <Pricing /> */}
     </Layout>
   );
 };
