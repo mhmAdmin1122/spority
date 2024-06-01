@@ -3,7 +3,7 @@ import EventsCards from "./SectionsCards/EventsCards";
 
 const PlayerBox = () => {
   return (
-    <div className="flex items-start gap-4 justify-center p-5 w-full bg-[#0e0805] player-box-live-channel-page">
+    <div className="flex items-center gap-4 justify-center p-5 w-full bg-[#0e0805] player-box-live-channel-page">
       <div className="player-of-main-channel flex items-center justify-center w-[70%]">
         <iframe
           src="//stream.crichd.vip/update/skys2.php"
@@ -15,7 +15,7 @@ const PlayerBox = () => {
           Your Browser Do not Support Iframe
         </iframe>
       </div>
-      <div className="overflow-scroll overflow-x-hidden listof-event max-h-[460px] min-h-[460px] list-of-event-web-livechannel-page">
+      <div className="flex flex-col items-center">
         <EventsCards />
       </div>
     </div>

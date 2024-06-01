@@ -1,11 +1,44 @@
+/*for tab and mobile*/
+
+@media (max-width: 778px) and (min-width: 450px) {
+  .player-box-live-channel-page {
+    @apply !flex-col;
+  }
+  .bell-newslatter,
+  .fadebell {
+    @apply hidden;
+  }
+  .player-of-main-channel {
+    @apply w-full;
+  }
+  .main-channel-live-page-iframe {
+    height: 34vh !important;
+    width: 93vw !important;
+    overflow: hidden !important;
+    border-radius: 0.5rem !important;
+  }
+  .event-card-box {
+    @apply flex-row flex-wrap;
+  }
+}
+
+/*Mobile responsive*/
 @media (max-width: 451px) and (min-width: 260px) {
   .fadebell,
-  .list-of-event-web-livechannel-page,
   .bell-newslatter {
     @apply hidden;
   }
   .player-of-main-channel {
     @apply w-full;
+  }
+  .event-card-box {
+    @apply flex-row flex-wrap;
+  }
+  .events-list {
+    @apply h-full;
+  }
+  .event-card{
+  @apply h-[160px];
   }
   .main-channel-live-page-iframe {
     height: 32vh !important;
