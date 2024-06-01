@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const NewsLatter = () => {
   return (
-    <div className="bg-[#0e0805] newsletter-box-livechannel w-full relative flex items-center justify-around gap-4 px-20 pt-5 pb-40">
+    <div className="bg-[#0e0805] newsletter-box-livechannel w-full relative flex items-center justify-around px-20 pt-20 pb-40 overflow-hidden">
       <div className="newsletter-livechannel bg-[#181818] flex flex-col gap-4 p-20  rounded-md">
         <h2 className="text-gradient">Set Your Reminder Now</h2>
         <form className="flex flex-col items-center gap-4">
@@ -30,7 +30,7 @@ const NewsLatter = () => {
       <Image
         src={fadeBell}
         alt="bell-opacity0.2-image"
-        className="absolute right-[-90px] fadebell"
+        className="absolute top-2 right-[-90px] fadebell"
       />
     </div>
   );

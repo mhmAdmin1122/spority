@@ -8,6 +8,9 @@
   .fadebell {
     @apply hidden;
   }
+  .events-list {
+    @apply flex-row flex-wrap;
+  }
   .player-of-main-channel {
     @apply w-full;
   }
@@ -37,8 +40,8 @@
   .events-list {
     @apply h-full;
   }
-  .event-card{
-  @apply h-[160px];
+  .event-card {
+    @apply h-[160px];
   }
   .main-channel-live-page-iframe {
     height: 32vh !important;
