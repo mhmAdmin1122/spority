@@ -2,13 +2,12 @@
 import { mongooseConnection } from "@/lib/mongoose";
 import { Channel } from "@/models/channel";
 import Head from "next/head";
-import { AiFillLike, AiFillDislike } from "react-icons/ai";
-import { MdShare, MdBookmarkAdd } from "react-icons/md";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 import Layout from "../Components/Layout";
 import Image from "next/image";
+import NewsLatter from "../Components/Sections/NewsLatter";
 
 const PlayerBox = ({ channels }: any) => {
   const [channelCardData, setChannelCardData] = useState<
@@ -37,7 +36,7 @@ const PlayerBox = ({ channels }: any) => {
             />
           </div>
           <div className="flex flex-col items-start gap-2 w-full">
-            <h2 className="text-[#fff] text-4xl font-bold pt-12">
+            <h2 className="text-[#fff] text-4xl font-bold pt-12 streamer-more-channel-box-heading">
               Watch More Channels
             </h2>
             <div className="morechannelsidPage flex flex-wrap items-center justify-center gap-8 px-3 py-8 w-full">
@@ -65,6 +64,7 @@ const PlayerBox = ({ channels }: any) => {
               ))}
             </div>
           </div>
+          <NewsLatter />
         </div>
       </Layout>
     </>

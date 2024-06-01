@@ -35,8 +35,18 @@
   .bell-newslatter {
     @apply hidden;
   }
-  .player-of-main-channel {
+  .player-of-main-channel,
+  .mainbox-livepage-streamer {
     @apply w-full;
+  }
+  .mainbox-livepage-streamer iframe {
+    @apply h-[31vh];
+  }
+  .streamer-more-channel-box-heading {
+    @apply text-2xl text-center flex flex-col items-center justify-center px-2;
+  }
+  .playerbox_player {
+    @apply px-6;
   }
   .event-card-box {
     @apply flex-row flex-wrap;
