@@ -1,0 +1,11 @@
+.slick-prev,
+.slick-next {
+  @apply !hidden;
+}
+.slick-list {
+  height: 80vh !important;
+}
+
+.slick-dots {
+  bottom: 17px !important;
+}
