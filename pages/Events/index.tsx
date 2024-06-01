@@ -2,12 +2,14 @@ import React from "react";
 import Layout from "../Components/Layout";
 import Head from "next/head";
 import Channels from "../Components/Sections/Channels";
-import Pricing from "../Components/Sections/Pricing";
 import EventsHero from "../Components/HeroBanners/EventsHero";
 import eventpic1 from "@/public/img/events2.svg";
 import Image from "next/image";
 import eventpic3 from "@/public/img/events3.svg";
 import Slider from "react-slick";
+import WatchBtn from "../Components/WatchBtn";
+import FeaturedEvents from "../Components/SectionsCards/FeaturedEvents";
+import MostViewEvents from "../Components/SectionsCards/MostViewEvents";
 
 const EventsPage = () => {
   const settings = {
@@ -24,45 +26,21 @@ const EventsPage = () => {
       <Head>
         <title>Events - Spority</title>
       </Head>
-
-      <div className="event-page-hero-banner w-full overflow-hidden h-[80vh]">
-        <div className="slider-container w-full h-[80vh] overflow-hidden">
-          <Slider {...settings}>
-            <div className="object-cover w-full h-full">
-              <Image src={eventpic3} alt="image-of-banner" className="object-cover w-full" />
-            </div>
-            <div className="object-cover w-full h-full">
-              <Image src={eventpic1} alt="image-of-banner" className="object-cover w-full" />
-            </div>
-            <div className="object-cover w-full h-full">
-              <Image src={eventpic3} alt="image-of-banner" className="object-cover w-full" />
-            </div>
-            <div className="object-cover w-full h-full">
-              <Image src={eventpic1} alt="image-of-banner" className="object-cover w-full" />
-            </div>
-            <div className="object-cover w-full h-full">
-              <Image src={eventpic3} alt="image-of-banner" className="object-cover w-full" />
-            </div>
-            <div className="object-cover w-full h-full">
-              <Image src={eventpic1} alt="image-of-banner" className="object-cover w-full" />
-            </div>
-          </Slider>
+      <EventsHero />
+      <div className="fetured-events-most-view-events bg-[#0e0805] text-white px-20 pt-20 pb-40">
+        <h3 className="text-4xl">Featured Events</h3>
+        <div className="flex items-center justify-center gap-4 w-full py-8">
+          <div className="featured-Events-post-eventpage flex items-center justify-center w-[50%] flex-wrap gap-4">
+            <FeaturedEvents />
+            <FeaturedEvents />
+            <FeaturedEvents />
+            <FeaturedEvents />
+          </div>
+          <div className="mostView-Events-post-eventpage w-[50%] flex flex-col items-center justify-center">
+            <MostViewEvents />
+          </div>
         </div>
       </div>
-      {/* <EventsHero
-        imageSrc1={eventpic1}
-        imageSrc2={eventpic2}
-        imageSrc3={eventpic3}
-        Event1Name="PSL"
-        Event2Name="IPL"
-        Event3Name="BPL"
-        Event1Link="/Events"
-        Event2Link="/Events"
-        Event3Link="/Events"
-        EventAltText1="psl-match-pic"
-        EventAltText2="ipl-match-pic"
-        EventAltText3="bpl-match-pic"
-      /> */}
       <Channels />
       {/* <Pricing /> */}
     </Layout>
