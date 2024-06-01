@@ -16,3 +16,27 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.button-icon {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2rem;
+  transform: translateX(2.5rem); /* Initially out of view */
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-icon-visible {
+  transform: translateX(0); /* Slides in on hover */
+}
+
+.button-text {
+  transition: margin-right 0.3s ease-in-out;
+}
+
+.button-text-hovered {
+  margin-right: 8px; /* 8px gap when icon is visible */
+}

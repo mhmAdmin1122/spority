@@ -1,10 +1,9 @@
-import Image from "next/image";
 import React from "react";
 import HeroPic1 from "@/public/img/heroHomepic1.svg";
 import illustPic from "@/public/img/thrillbattle.png";
-import AuthBtn from "../AuthBtn";
-import LinkBtn from "../LinkBtn";
-import Link from "next/link";
+import WatchBtn from "../WatchBtn";
+import Image from "next/image";
+import btnimg from "@/public/img/playIcon.png";
 
 const HomeHerro = () => {
   return (
@@ -20,13 +19,28 @@ const HomeHerro = () => {
           for glory, all from the convenience of your own space. Don{"'"}t miss
           this unparalleled sports experience {"–"} reserve your spot now!
         </p>
-        <Link href="/Live-Channels" className="home-btn">Watch Now</Link>
+        <WatchBtn />
       </div>
 
       <div className="homeHero-innerBox hero-illust-Box w-1/2">
         <Image src={illustPic} alt="illust-homeHero-pic" />
       </div>
     </div>
+    // <div className="Hero-Section-MainDiv">
+    //   <div className="w-[450px] pl-[80px] pb-[80px] max-[860px]:pl-[40px] max-[860px]:w-[360px] max-[400px]:w-[300px] max-[340px]:w-[280px]">
+    //     <h1 className="">Watch Rage of Starc</h1>
+    //     <p className="">
+    //       We are a full services digital agency that bulids immesive user
+    //       experience
+    //     </p>
+    //     <div className="btn mt-4">
+    //       <button className="">WATCH NOW</button>
+    //       <div className="hidden">
+    //         <Image src={btnimg} width={20} height={20} alt="img"></Image>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 
