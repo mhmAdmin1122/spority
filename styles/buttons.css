@@ -1,0 +1,4 @@
+.link-button-custom, .button-custom {
+  background: linear-gradient(-60deg, #e8d576, #e3652b);
+  @apply px-6 py-1 rounded-full font-medium text-black text-[16px];
+}

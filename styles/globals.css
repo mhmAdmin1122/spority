@@ -10,10 +10,10 @@
 
 /* navbar */
 .navbar {
-  @apply w-full flex items-center justify-between bg-[#202020] text-[#fff] px-[40px] py-2;
+  @apply w-full flex items-center justify-between bg-[#0B0704] text-[#fff] px-[40px] py-2;
 }
 .navbar-logoBox {
-  @apply w-[120px];
+  @apply w-[60px] h-[60px];
 }
 .authBtn {
   @apply flex items-center gap-2 ease-in-out text-[#000] px-[20px] py-[10px] rounded-md hover:bg-[#000] hover:text-[#ff4500] border-2 border-[#ff4500] transition-all duration-700 delay-300 hover:border-[#ff4500] bg-[#ff4500];

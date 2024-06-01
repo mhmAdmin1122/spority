@@ -3,6 +3,7 @@ import React from "react";
 import HeroPic1 from "@/public/img/heroHomepic1.svg";
 import illustPic from "@/public/img/thrillbattle.png";
 import AuthBtn from "../AuthBtn";
+import LinkBtn from "../LinkBtn";
 
 const HomeHerro = () => {
   return (
@@ -18,7 +19,7 @@ const HomeHerro = () => {
           for glory, all from the convenience of your own space. Don{"'"}t miss
           this unparalleled sports experience {"–"} reserve your spot now!
         </p>
-        <AuthBtn />
+        <LinkBtn title="Sign In" url="/" />
       </div>
 
       <div className="homeHero-innerBox hero-illust-Box w-1/2">
