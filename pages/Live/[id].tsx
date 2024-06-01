@@ -28,7 +28,7 @@ const PlayerBox = ({ channels }: any) => {
       </Head>
       <Layout>
         <div className="playerbox_player w-full px-14 py-12 flex flex-col items-center justify-center bg-[#0e0805]">
-          <div className="mainbox w-full">
+          <div className="mainbox-livepage-streamer w-[70%]">
             <iframe
               src={`${channels?.channelurl}`}
               scrolling="no"

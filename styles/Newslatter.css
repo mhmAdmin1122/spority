@@ -11,8 +11,12 @@
   .events-list {
     @apply flex-row flex-wrap;
   }
-  .player-of-main-channel {
+  .player-of-main-channel,
+  .mainbox-livepage-streamer {
     @apply w-full;
+  }
+  .mainbox-livepage-streamer {
+    @apply h-[31vh];
   }
   .main-channel-live-page-iframe {
     height: 34vh !important;
