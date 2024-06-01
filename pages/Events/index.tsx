@@ -29,7 +29,7 @@ const EventsPage = () => {
         <div className="slider-container w-full h-[80vh] overflow-hidden">
           <Slider {...settings}>
             <div className="object-cover w-full h-full">
-              <Image src={eventpic3} alt="image-of-banner" className="object-fill w-full" />
+              <Image src={eventpic3} alt="image-of-banner" className="object-cover w-full" />
             </div>
             <div className="object-cover w-full h-full">
               <Image src={eventpic1} alt="image-of-banner" className="object-cover w-full" />
