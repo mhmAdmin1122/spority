@@ -1,28 +1,37 @@
 import React from "react";
+import bell from "@/public/img/bell.png";
+import fadeBell from "@/public/img/fadeBell.svg";
+import Image from "next/image";
 
 const NewsLatter = () => {
   return (
-    <div className="newlatter-box">
-      <div className="newslatter-inner-container">
-        <form className="newlatter-form">
-          <h3 className="newslatter-form-heading">
-            Subscribe For More
-          </h3>
-          <div className="input-Boxes-newslatter-form text-[#212121]">
+    <div className="bg-[#0e0805] newsletter-box-livechannel w-full relative flex items-center justify-around gap-4 px-20 pt-5 pb-40">
+      <div className="newsletter-livechannel bg-[#181818] flex flex-col gap-4 p-20  rounded-md">
+        <h2 className="text-gradient">Set Your Reminder Now</h2>
+        <form className="flex flex-col items-center gap-4">
+          <span className="flex items-center gap-6 newlatter-form-inputs">
             <input
               type="text"
+              className="px-4 h-[40px] w-[186px] rounded-sm outline-none"
               placeholder="Name"
             />
             <input
-              type="email"
+              type="text"
+              className="px-4 h-[40px] w-[186px] rounded-sm outline-none"
               placeholder="Email"
             />
-          </div>
-          <div className="subscribebtn-newslatter">
-            <button type="submit" className="">Subscribe</button>
-          </div>
+          </span>
+          <button className="home-btn !w-full newslatter-action-btn" type="submit">
+            Submit
+          </button>
         </form>
       </div>
+      <Image src={bell} alt="bell-opacity1-image" className="bell-newslatter" />
+      <Image
+        src={fadeBell}
+        alt="bell-opacity0.2-image"
+        className="absolute right-[-90px] fadebell"
+      />
     </div>
   );
 };

@@ -1,0 +1,41 @@
+@media (max-width: 451px) and (min-width: 260px) {
+  .fadebell,
+  .list-of-event-web-livechannel-page,
+  .bell-newslatter {
+    @apply hidden;
+  }
+  .player-of-main-channel {
+    @apply w-full;
+  }
+  .main-channel-live-page-iframe {
+    height: 32vh !important;
+    width: 90vw !important;
+    overflow: hidden !important;
+    border-radius: 0.5rem !important;
+  }
+  .livechannel-channel-box {
+    @apply pb-[20px];
+  }
+  .newsletter-box-livechannel {
+    @apply px-4 py-12;
+  }
+  .newsletter-livechannel {
+    @apply p-4 bg-transparent;
+  }
+  .text-gradient,
+  .live-channel-box-heading {
+    @apply text-2xl;
+  }
+  .live-channel-box-heading {
+    @apply px-10 text-center flex w-full items-center justify-center;
+  }
+  .newlatter-form-inputs {
+    @apply flex-col gap-4;
+  }
+  .newslatter-action-btn {
+    @apply !w-[90%];
+  }
+  .player-box-live-channel-page {
+    @apply flex flex-col items-center justify-center;
+  }
+}

@@ -39,7 +39,7 @@ const EventsCards = () => {
               />
               <Link
                 href={event?.eventchannel1}
-                className="border-[1px] border-gray-200 rounded-sm px-3 py-1 absolute z-30 bg-[#00ff] text-[#fff] watch-now-btn"
+                className="rounded-sm px-3 py-1 absolute z-30 watch-now-btn"
               >
                 Watch Now
               </Link>
