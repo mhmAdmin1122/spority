@@ -2,7 +2,7 @@
 .button-custom,
 .home-btn, .watch-now-btn {
   background: linear-gradient(99.3deg, #e36c30 4.09%, #e8d576 118.98%);
-  @apply px-6 py-1 rounded-full font-medium text-black text-[14px];
+  @apply px-6 py-1 rounded-full font-medium text-black text-[14px] w-fit;
 }
 
 .home-btn {

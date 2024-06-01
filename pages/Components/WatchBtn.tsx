@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import PlayIcon from '@/public/img/playIcon.png';
+import PlayIcon from "@/public/img/playIcon.png";
 import Image from "next/image";
 
-const WatchBtn = () => {
+const WatchBtn = ({ classextra, btnUrl }: any) => {
   return (
     <Link
-      href="/Live-Channels"
-      className="relative inline-flex gap-4 items-center justify-center px-4 py-2  group overflow-hidden home-btn"
+      href={`${btnUrl}`}
+      className={`relative inline-flex gap-4 items-center justify-center px-4 py-2  group overflow-hidden home-btn ${classextra}`}
     >
       <span className="transition-all duration-300 ease-in-out group-hover:mr-5">
         Watch Now

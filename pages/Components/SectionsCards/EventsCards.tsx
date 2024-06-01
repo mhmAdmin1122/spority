@@ -2,6 +2,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import WatchBtn from '../WatchBtn'
 
 const EventsCards = () => {
   const [apiData, setApiData] = useState<any>([]);
@@ -37,12 +38,7 @@ const EventsCards = () => {
                 height={90}
                 className="w-full h-full"
               />
-              <Link
-                href={event?.eventchannel1}
-                className="rounded-sm px-3 py-1 absolute z-30 watch-now-btn"
-              >
-                Watch Now
-              </Link>
+              <WatchBtn classextra="absolute z-30 watch-now-btn !py-4" btnUrl={event?.eventchannel1} />
             </div>
           ))}
         </div>

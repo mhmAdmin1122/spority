@@ -254,5 +254,5 @@
 }
 
 .event-card:hover .watch-now-btn {
-  @apply bottom-[10px];
+  @apply bottom-[40px];
 }
