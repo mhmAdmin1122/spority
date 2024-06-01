@@ -19,7 +19,7 @@ const HomeHerro = () => {
           for glory, all from the convenience of your own space. Don{"'"}t miss
           this unparalleled sports experience {"–"} reserve your spot now!
         </p>
-        <LinkBtn title="Sign In" url="/" />
+        <LinkBtn title="Set Reminder" url="/" />
       </div>
 
       <div className="homeHero-innerBox hero-illust-Box w-1/2">

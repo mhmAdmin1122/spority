@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link href="/Blog">Blog</Link>
           <Link href="/Contact">Contact</Link>
         </div>
-        <LinkBtn title="Sign In" url="/" />
+        <LinkBtn title="Set Reminder" url="/" />
       </div>
       <div className="mobileview-tabs2view-dropdown">
         <MdMenu />
