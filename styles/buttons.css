@@ -1,4 +1,8 @@
-.link-button-custom, .button-custom {
+.link-button-custom, .button-custom, .home-btn {
   background: linear-gradient(99.3deg, #E36C30 4.09%, #E8D576 118.98%);
   @apply px-6 py-1 rounded-full font-medium text-black text-[14px];
+}
+
+.home-btn{
+    @apply py-3 px-7;
 }

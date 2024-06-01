@@ -9,13 +9,7 @@ const Channels = () => {
   return (
     <div className="bg-[#0e0805] text-[#fff] py-[60px] px-[40px]">
       <div className="flex items-center justify-between">
-        <h3 className="text-4xl font-bold">Live TV Channels</h3>
-        <Link
-          href="/Live"
-          className="text-[#bd3e3c] font-medium hover:underline"
-        >
-          See All
-        </Link>
+        <h3 className="text-4xl font-bold px-20">Live TV Channels</h3>
       </div>
       <ChannelsCard />
     </div>

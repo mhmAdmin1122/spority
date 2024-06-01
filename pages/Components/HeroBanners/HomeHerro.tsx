@@ -4,6 +4,7 @@ import HeroPic1 from "@/public/img/heroHomepic1.svg";
 import illustPic from "@/public/img/thrillbattle.png";
 import AuthBtn from "../AuthBtn";
 import LinkBtn from "../LinkBtn";
+import Link from "next/link";
 
 const HomeHerro = () => {
   return (
@@ -19,7 +20,7 @@ const HomeHerro = () => {
           for glory, all from the convenience of your own space. Don{"'"}t miss
           this unparalleled sports experience {"–"} reserve your spot now!
         </p>
-        <LinkBtn title="Set Reminder" url="/" />
+        <Link href="/Live-Channels" className="home-btn">Watch Now</Link>
       </div>
 
       <div className="homeHero-innerBox hero-illust-Box w-1/2">
