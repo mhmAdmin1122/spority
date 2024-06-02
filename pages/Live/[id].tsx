@@ -26,7 +26,7 @@ const PlayerBox = ({ channels }: any) => {
         <title>{channels?.name} Live - Spority</title>
       </Head>
       <Layout>
-        <div className="playerbox_player w-full px-14 py-12 flex flex-col items-center justify-center bg-[#0e0805]">
+        <div className="playerbox_player w-full px-14 pb-12 pt-20 flex flex-col items-center justify-center bg-[#0e0805]">
           <div className="mainbox-livepage-streamer w-[70%]">
             <iframe
               src={`${channels?.channelurl}`}
