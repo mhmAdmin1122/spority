@@ -16,7 +16,7 @@ const EventsPage = () => {
       <EventsHero />
       <div className="fetured-events-most-view-events bg-[#0e0805] text-white px-20 pt-24 pb-5">
         <h3 className="text-4xl">Featured Events</h3>
-        <div className="flex items-center justify-center gap-4 w-full py-8">
+        <div className="flex items-center justify-center gap-4 w-full py-8 featured-Events-post-eventpage-box">
           <div className="featured-Events-post-eventpage flex items-center justify-center w-[50%] flex-wrap gap-4">
             <FeaturedEvents />
             <FeaturedEvents />

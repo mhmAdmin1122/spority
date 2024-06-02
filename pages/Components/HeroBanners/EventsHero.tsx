@@ -8,7 +8,7 @@ import Slider from "react-slick";
 const EventsHero = () => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     autoplay: true,
     speed: 4000,
     autoplaySpeed: 4000,

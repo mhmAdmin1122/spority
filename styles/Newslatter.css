@@ -27,6 +27,19 @@
   .event-card-box {
     @apply flex-row flex-wrap;
   }
+  .featured-event-card-events-page {
+    @apply w-[223px] h-[150px];
+  }
+  .mostView-Events-post-eventpage {
+    @apply h-[300px];
+  }
+  .featured-Events-post-eventpage,
+  .mostView-Events-post-eventpage {
+    @apply w-full;
+  }
+  .featured-Events-post-eventpage-box {
+    @apply flex-col-reverse;
+  }
 }
 
 /*Mobile responsive*/
@@ -87,5 +100,24 @@
   }
   .player-box-live-channel-page {
     @apply flex flex-col items-center justify-center;
+  }
+  .featured-event-card-events-page {
+    @apply w-[305px] h-[205px];
+  }
+  .mostView-Events-post-eventpage {
+    @apply h-[300px];
+  }
+  .featured-Events-post-eventpage,
+  .mostView-Events-post-eventpage {
+    @apply w-full;
+  }
+  .featured-Events-post-eventpage-box {
+    @apply flex-col-reverse;
+  }
+  .fetured-events-most-view-events h3 {
+    @apply text-2xl;
+  }
+  .fetured-events-most-view-events {
+    @apply px-10;
   }
 }
