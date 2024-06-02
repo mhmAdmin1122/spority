@@ -1,4 +1,4 @@
-@media (max-width: 1120px) and (min-width: 1038px) {
+@media (max-width: 1290px) and (min-width: 1038px) {
   .cardScore3 {
     @apply hidden;
   }
