@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const NewsLatter = () => {
   return (
-    <div className="bg-[#0e0805] newsletter-box-livechannel w-full relative flex items-center justify-around px-20 pt-20 pb-40 overflow-hidden">
+    <div id="newslatter" className="bg-[#0e0805] newsletter-box-livechannel w-full relative flex items-center justify-around px-20 pt-20 pb-40 overflow-hidden">
       <div className="newsletter-livechannel bg-[#181818] flex flex-col gap-4 p-20  rounded-md">
         <h2 className="text-gradient">Set Your Reminder Now</h2>
         <form className="flex flex-col items-center gap-4">

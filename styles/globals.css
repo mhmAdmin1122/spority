@@ -10,7 +10,7 @@
 
 /* navbar */
 .navbar {
-  @apply w-full flex items-center justify-between bg-[#0B0704] text-[#fff] px-[40px] py-2;
+  @apply w-full flex items-center justify-between text-[#fff] px-[40px] py-2;
 }
 .navbar-logoBox {
   @apply w-[60px] h-[60px];
