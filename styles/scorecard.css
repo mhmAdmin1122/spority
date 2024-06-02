@@ -28,11 +28,27 @@
   }
 }
 
-@media (max-width: 580px) and (min-width: 300px) {
+@media (max-width: 580px) and (min-width: 410px) {
   .cardScore3,
   .cardScore2,
   .matches-headlines-line-scoreline,
   .watch-live-line-score-card-line {
+    @apply hidden;
+  }
+  .cardScore1 {
+    @apply w-full h-[70px] border-r-[0px];
+  }
+  .score-card-section {
+    @apply justify-center;
+  }
+}
+
+@media (max-width: 410px) and (min-width: 320px) {
+  .cardScore3,
+  .cardScore2,
+  .matches-headlines-line-scoreline,
+  .watch-live-line-score-card-line,
+  .cricket-headlines-line-scoreline {
     @apply hidden;
   }
   .cardScore1 {
