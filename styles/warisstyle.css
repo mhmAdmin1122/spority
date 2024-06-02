@@ -1,0 +1,82 @@
+/* Home Hero Section */
+.Hero-Section-MainDiv {
+  height: 500px;
+  background-image: url("../public/img/Desktop-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+}
+.Hero-Section-MainDiv h1 {
+  @apply text-[50px] text-white font-bold leading-[55px] max-[860px]:text-[40px]  max-[400px]:text-[30px] max-[400px]:leading-[36px];
+}
+.Hero-Section-MainDiv p {
+  @apply text-[12px] text-white font-semibold max-[860px]:text-[10px];
+}
+.Hero-Section-MainDiv button {
+  @apply text-[8px] text-black pl-6 pr-2 py-2 font-bold;
+}
+.Hero-Section-MainDiv .btn {
+  @apply w-fit h-fit pr-4 py-1 flex rounded-full;
+  align-items: center;
+  background: linear-gradient(125deg, #e3652b, #e8d576);
+}
+.Hero-Section-MainDiv .btn:hover div {
+  display: block;
+  transition: all 0s 2s ease-in;
+}
+/* Home Hero Section */
+
+/* TopClashes Section */
+.TopClashes-MainDiv {
+  @apply w-full h-fit bg-black pb-12;
+}
+.TopClashes-h1 {
+  @apply text-[50px] font-bold pb-[40px] max-[860px]:text-[40px] max-[400px]:text-[30px] max-[860px]:text-center max-[860px]:pb-[20px];
+  background: linear-gradient(125deg, #e3652b, #e8d576);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* TopClashes Section */
+/* TopClashes Card */
+.TopClashes-Card {
+  background-image: url("../public/img/TopClashesCardImg.jpg");
+  @apply h-[180px] w-[220px] pb-3 flex border-[1px] border-gray-400 max-[860px]:h-[150px];
+  align-items: end;
+}
+.TopClashes-Card h1 {
+  @apply text-white font-extrabold text-[11px];
+}
+.TopClashes-Card p {
+  @apply text-[8px] text-gray-300 font-semibold leading-[10px];
+}
+.TopClashes-Card button {
+  @apply text-[#e3652b] font-bold text-[5px] px-[6px] py-[4px] mt-1 border-[1px] border-[#e3652b];
+}
+.TopClashes-Card button:hover,
+.TopClashes-Card2 button:hover {
+  background: linear-gradient(125deg, #e3652b, #e8d576);
+  color: black;
+  border: none;
+}
+.TopClashes-Card2 {
+  background-image: url("../public/img/TopClashesCardImg.jpg");
+  @apply h-[380px] w-[480px] pb-3 flex border-[1px] border-gray-400 max-[975px]:w-[420px] max-[920px]:w-[380px] max-[860px]:h-[260px] max-[460px]:h-[220px] max-[400px]:w-[220px]  max-[400px]:h-[150px];
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: end;
+}
+@media screen and (max-width: 400px) {
+  .TopClashes-Card2 h1 {
+    @apply text-white font-extrabold text-[11px];
+  }
+  .TopClashes-Card2 p {
+    @apply text-[8px] text-gray-300 font-semibold leading-[10px];
+  }
+  .TopClashes-Card2 button {
+    @apply text-[#e3652b] font-bold text-[5px] px-[6px] py-[4px] mt-1 border-[1px] border-[#e3652b];
+  }
+}
+/* TopClashes Card */

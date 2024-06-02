@@ -1,27 +1,20 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from "react";
 
-const ClashCard = ({cardPic, altText, videoSec, videoLink}:any) => {
-  const [isShown, setIsShown] = useState(false);
-
-  const handleHover = (event: any) => {
-    setIsShown((current) => !current);
-  };
+const ClashCard = () => {
   return (
-    <Link href={`${videoLink}`} className="clashes-cards">
-      <Image
-        src={cardPic}
-        alt={altText}
-        onMouseOver={handleHover}
-        onMouseOut={handleHover}
-      />
-      {isShown && (
-        <b className="time-stamp-clash-card">
-          {videoSec} sec
-        </b>
-      )}
-    </Link>
+    <div className="TopClashes-Card">
+      <div className="flex w-full px-[6px] ">
+        <div className="w-[160px]">
+          <h1 className="">Bumrah the game Changer</h1>
+          <p>
+            Watch the hightlight of the most anticipated game in the cricket
+          </p>
+        </div>
+        <div className="">
+          <button>Watch Now</button>
+        </div>
+      </div>
+    </div>
   );
 };
 

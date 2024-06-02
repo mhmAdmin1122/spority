@@ -20,7 +20,6 @@ const HomePage = () => {
         <HomeHerro />
         {/* <ScoreCard /> */}
         <Clashes />
-        <News />
         <NewsLatter />
       </section>
     </Layout>

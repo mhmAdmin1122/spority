@@ -11,7 +11,7 @@ const righteous = Righteous({
 
 const Layout = ({ children }: any) => {
   return (
-    <main className={`${righteous.className}`}>
+    <main className={`${righteous.className} select-none`}>
       <Navbar />
       {children}
       <Footer />
