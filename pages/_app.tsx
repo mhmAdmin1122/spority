@@ -4,6 +4,7 @@ import "@/styles/buttons.css";
 import "@/styles/Newslatter.css";
 import "@/styles/channels.css";
 import "@/styles/sliders.css";
+import "@/styles/scorecard.css";
 import "@/styles/warisstyle.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

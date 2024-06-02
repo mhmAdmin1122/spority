@@ -1,0 +1,44 @@
+@media (max-width: 1120px) and (min-width: 1038px) {
+  .cardScore3 {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 1037px) and (min-width: 760px) {
+  .cardScore3,
+  .cardScore2 {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 760px) and (min-width: 660px) {
+  .cardScore3,
+  .cardScore2,
+  .matches-headlines-line-scoreline {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 660px) and (min-width: 580px) {
+  .cardScore3,
+  .cardScore2,
+  .matches-headlines-line-scoreline,
+  .cricket-headlines-line-scoreline {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 580px) and (min-width: 300px) {
+  .cardScore3,
+  .cardScore2,
+  .matches-headlines-line-scoreline,
+  .watch-live-line-score-card-line {
+    @apply hidden;
+  }
+  .cardScore1 {
+    @apply w-full h-[70px] border-r-[0px];
+  }
+  .score-card-section {
+    @apply justify-center;
+  }
+}
