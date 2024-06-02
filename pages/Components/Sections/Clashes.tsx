@@ -8,7 +8,7 @@ import TopClashCard from "../SectionsCards/TopClashCard";
 const Clashes = () => {
   return (
     <div className="TopClashes-MainDiv">
-      <div className="px-[30px]">
+      <div className="px-[50px]">
         <h1 className="TopClashes-h1">Top Clashes</h1>
         <div className="flex gap-3 justify-center max-[860px]:flex-col max-[400px]:gap-2">
           <div className="">
