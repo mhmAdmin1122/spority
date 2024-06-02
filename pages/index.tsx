@@ -18,7 +18,7 @@ const HomePage = () => {
       </Head>
       <section className="">
         <HomeHerro />
-        {/* <ScoreCard /> */}
+        <ScoreCard />
         <Clashes />
         <NewsLatter />
       </section>
